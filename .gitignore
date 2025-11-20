@@ -39,3 +39,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# spline project dependencies (external)
+/public/spline/node_modules/
+/public/spline/dist/
+/public/spline/.cache/
+/public/spline-footer/node_modules/
