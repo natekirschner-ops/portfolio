@@ -1,0 +1,60 @@
+{
+  "id": "collaborative-intelligence",
+  "title": "Collaborative Intelligence",
+  "description": "What if AI tools became collaborative partners rather than productivity enhancers? Collaborative Intelligence reimagines the relationship between human creativity and artificial intelligence, transforming AI from a utility into a genuine creative collaborator.\n\n**Conceptual Breakthrough:**\nInstead of optimizing AI for efficiency, this project explores AI as a creative thinking partner that challenges assumptions, suggests unexpected connections, and helps humans explore ideas they wouldn't reach alone.\n\n**Key Insights:**\n- **Creative Friction**: AI that intentionally introduces productive friction rather than removing all resistance\n- **Perspective Expansion**: Systems that offer genuinely different viewpoints, not just variations on human input\n- **Idea Evolution**: Collaborative processes where concepts develop through human-AI dialogue\n- **Cognitive Diversity**: AI that brings different thinking styles to creative challenges\n- **Emergent Creativity**: Solutions that neither human nor AI would generate independently\n\nCollaborative Intelligence challenges the assumption that AI should be invisible or seamlessly efficient, proposing instead that the most valuable AI relationships involve visible, intentional collaboration where both human and artificial intelligence contribute distinct capabilities to creative problem-solving.",
+  "shortDescription": "Ideas don’t grow in straight lines — they branch, loop, and evolve through conversation.",
+  "thumbnailUrl": "thumbnail.mp4",
+  "media": [
+    {
+      "type": "image",
+      "src": "interface-concept.jpg",
+      "alt": "Collaborative Intelligence interface showing human-AI creative dialogue",
+      "caption": "Interface design emphasizing dialogue and creative partnership rather than tool usage",
+      "aspectRatio": "video"
+    },
+    {
+      "type": "image",
+      "src": "thinking-visualization.jpg",
+      "alt": "Visualization of human and AI thinking processes merging",
+      "caption": "Visual representation of how human intuition and AI analysis can create hybrid insights",
+      "aspectRatio": "auto"
+    },
+    {
+      "type": "video",
+      "src": "collaboration-demo.mp4",
+      "alt": "demonstration of human-AI creative collaboration",
+      "caption": "Real-time demonstration of collaborative ideation between human designer and AI partner",
+      "aspectRatio": "video"
+    }
+  ],
+  "links": [
+    {
+      "icon": "prototype-icon.png",
+      "label": "View Prototype",
+      "url": "https://collaborative-intelligence.dev"
+    },
+    {
+      "icon": "research-icon.png",
+      "label": "Research Paper",
+      "url": "https://research.collaborative-intelligence.dev"
+    }
+  ],
+  "position": {
+    "x": 0,
+    "y": 0
+  },
+  "metadata": {
+    "date": "2024",
+    "technologies": [
+      "OpenAI API",
+      "Claude API",
+      "React",
+      "TypeScript",
+      "WebSockets",
+      "Creative AI",
+      "Collaborative Systems",
+      "Human-Computer Interaction"
+    ],
+    "status": "completed"
+  }
+}

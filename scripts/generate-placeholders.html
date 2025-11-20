@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placeholder Image Generator</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            background: #000;
+            color: #fff;
+            padding: 20px;
+        }
+        .generator {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        canvas {
+            border: 1px solid #333;
+            margin: 10px;
+            border-radius: 8px;
+        }
+        .controls {
+            margin: 20px 0;
+        }
+        button {
+            background: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        button:hover {
+            background: #555;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="generator">
+        <h1>Portfolio Placeholder Generator</h1>
+        <div class="controls">
+            <button onclick="generateAll()">Generate All Placeholders</button>
+            <button onclick="downloadAll()">Download All</button>
+        </div>
+        <div id="canvases" class="grid"></div>
+    </div>
+
+    <script>
+        const images = [
+            { name: 'neural-canvas', type: 'experiments', colors: ['#8b5cf6', '#3b82f6'] },
+            { name: 'quantum-thoughts', type: 'insights', colors: ['#f59e0b', '#ef4444'] },
+            { name: 'ethereal-ecommerce', type: 'projects', colors: ['#3b82f6', '#06b6d4'] },
+            { name: 'fractal-music', type: 'experiments', colors: ['#8b5cf6', '#ec4899'] },
+            { name: 'paradox-choice', type: 'insights', colors: ['#f59e0b', '#84cc16'] },
+            { name: 'distributed-dreams', type: 'projects', colors: ['#3b82f6', '#10b981'] },
+            { name: 'morphing-interfaces', type: 'experiments', colors: ['#8b5cf6', '#f59e0b'] },
+            { name: 'digital-minimalism', type: 'insights', colors: ['#f59e0b', '#6b7280'] },
+            { name: 'autonomous-gallery', type: 'projects', colors: ['#3b82f6', '#8b5cf6'] },
+            { name: 'breathing-pixels', type: 'experiments', colors: ['#8b5cf6', '#06b6d4'] },
+            { name: 'weight-of-code', type: 'insights', colors: ['#f59e0b', '#dc2626'] },
+            { name: 'temporal-workspace', type: 'projects', colors: ['#3b82f6', '#059669'] }
+        ];
+
+        function createGradientBackground(ctx, width, height, colors) {
+            const gradient = ctx.createLinearGradient(0, 0, width, height);
+            gradient.addColorStop(0, colors[0] + '40');
+            gradient.addColorStop(1, colors[1] + '20');
+            ctx.fillStyle = gradient;
+            ctx.fillRect(0, 0, width, height);
+        }
+
+        function drawGeometricPattern(ctx, width, height, type) {
+            ctx.globalAlpha = 0.3;
+
+            if (type === 'projects') {
+                // Circles pattern
+                for (let i = 0; i < 8; i++) {
+                    const x = Math.random() * width;
+                    const y = Math.random() * height;
+                    const radius = Math.random() * 30 + 10;
+                    ctx.beginPath();
+                    ctx.arc(x, y, radius, 0, Math.PI * 2);
+                    ctx.strokeStyle = '#ffffff20';
+                    ctx.lineWidth = 2;
+                    ctx.stroke();
+                }
+            } else if (type === 'experiments') {
+                // Angular/crystal patterns
+                for (let i = 0; i < 6; i++) {
+                    const x = Math.random() * width;
+                    const y = Math.random() * height;
+                    const size = Math.random() * 40 + 20;
+
+                    ctx.save();
+                    ctx.translate(x, y);
+                    ctx.rotate(Math.random() * Math.PI);
+
+                    ctx.beginPath();
+                    ctx.moveTo(-size/2, -size/2);
+                    ctx.lineTo(size/2, -size/2);
+                    ctx.lineTo(size/3, size/2);
+                    ctx.lineTo(-size/3, size/2);
+                    ctx.closePath();
+
+                    ctx.strokeStyle = '#ffffff25';
+                    ctx.lineWidth = 1.5;
+                    ctx.stroke();
+                    ctx.restore();
+                }
+            } else {
+                // Flowing lines for insights
+                for (let i = 0; i < 4; i++) {
+                    ctx.beginPath();
+                    const startX = Math.random() * width;
+                    const startY = Math.random() * height;
+                    ctx.moveTo(startX, startY);
+
+                    for (let j = 0; j < 5; j++) {
+                        const x = startX + (Math.random() - 0.5) * 100;
+                        const y = startY + (Math.random() - 0.5) * 100;
+                        const cpX = startX + (Math.random() - 0.5) * 150;
+                        const cpY = startY + (Math.random() - 0.5) * 150;
+                        ctx.quadraticCurveTo(cpX, cpY, x, y);
+                    }
+
+                    ctx.strokeStyle = '#ffffff15';
+                    ctx.lineWidth = 2;
+                    ctx.stroke();
+                }
+            }
+
+            ctx.globalAlpha = 1;
+        }
+
+        function drawCenterSymbol(ctx, width, height, type) {
+            const centerX = width / 2;
+            const centerY = height / 2;
+            const size = 60;
+
+            ctx.font = `${size}px -apple-system, BlinkMacSystemFont, sans-serif`;
+            ctx.fillStyle = '#ffffff40';
+            ctx.textAlign = 'center';
+            ctx.textBaseline = 'middle';
+
+            const symbol = type === 'projects' ? '◉' : type === 'experiments' ? '◈' : '◊';
+            ctx.fillText(symbol, centerX, centerY);
+        }
+
+        function addNoise(ctx, width, height) {
+            const imageData = ctx.getImageData(0, 0, width, height);
+            const data = imageData.data;
+
+            for (let i = 0; i < data.length; i += 4) {
+                const noise = (Math.random() - 0.5) * 10;
+                data[i] = Math.max(0, Math.min(255, data[i] + noise));
+                data[i + 1] = Math.max(0, Math.min(255, data[i + 1] + noise));
+                data[i + 2] = Math.max(0, Math.min(255, data[i + 2] + noise));
+            }
+
+            ctx.putImageData(imageData, 0, 0);
+        }
+
+        function generatePlaceholder(image) {
+            const canvas = document.createElement('canvas');
+            const ctx = canvas.getContext('2d');
+
+            // Thumbnail size
+            canvas.width = 256;
+            canvas.height = 192;
+
+            // Dark base
+            ctx.fillStyle = '#0a0a0a';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+            // Gradient background
+            createGradientBackground(ctx, canvas.width, canvas.height, image.colors);
+
+            // Geometric patterns
+            drawGeometricPattern(ctx, canvas.width, canvas.height, image.type);
+
+            // Center symbol
+            drawCenterSymbol(ctx, canvas.width, canvas.height, image.type);
+
+            // Subtle noise
+            addNoise(ctx, canvas.width, canvas.height);
+
+            // Add subtle vignette
+            const gradient = ctx.createRadialGradient(
+                canvas.width/2, canvas.height/2, 0,
+                canvas.width/2, canvas.height/2, Math.max(canvas.width, canvas.height)/2
+            );
+            gradient.addColorStop(0, 'transparent');
+            gradient.addColorStop(1, '#00000040');
+            ctx.fillStyle = gradient;
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+            return canvas;
+        }
+
+        function generateAll() {
+            const container = document.getElementById('canvases');
+            container.innerHTML = '';
+
+            images.forEach(image => {
+                const canvas = generatePlaceholder(image);
+                canvas.title = image.name;
+                canvas.style.cursor = 'pointer';
+                canvas.onclick = () => downloadCanvas(canvas, image.name);
+
+                const wrapper = document.createElement('div');
+                wrapper.innerHTML = `<h3>${image.name}</h3>`;
+                wrapper.appendChild(canvas);
+                container.appendChild(wrapper);
+            });
+        }
+
+        function downloadCanvas(canvas, name) {
+            const link = document.createElement('a');
+            link.download = `${name}.jpg`;
+            link.href = canvas.toDataURL('image/jpeg', 0.9);
+            link.click();
+        }
+
+        function downloadAll() {
+            const canvases = document.querySelectorAll('canvas');
+            canvases.forEach((canvas, index) => {
+                setTimeout(() => {
+                    downloadCanvas(canvas, images[index].name);
+                }, index * 200);
+            });
+        }
+
+        // Auto-generate on load
+        window.onload = generateAll;
+    </script>
+</body>
+</html>

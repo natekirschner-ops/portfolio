@@ -1,0 +1,54 @@
+{
+  "id": "exposed",
+  "title": "Exposed",
+  "description": "In October last year, Idaho photographer Alex Pashley tagged along with Carriboo Jack bike-race founder Nate Kirschner to scope some trails in the Tetons. Because of the terrain's difficulty, the pair spent more time pushing their bikes than riding them. *What we thought would be a relatively mellow day turned into a ten-hour epic*, Pashley says. *Had I know what I was in for, I wouldn't have brought the full camera kit.* \n\n — Outside Magazine",
+  "shortDescription": "Project Writeup",
+  "thumbnailUrl": "thumbnail.mp4",
+  "media": {
+    "layout": "grid",
+    "columns": 1,
+    "items": [
+      {
+        "type": "image",
+        "src": "gallery-1.jpg",
+        "alt": "Nate topping out on a big hke-a-bike",
+        "caption": "You can't call it a backcountry ride without a little hike-a-bike! Looking back, this photo represents such a special time and place, with an amazing human-being. This will be a day I always will remember."
+      },
+      {
+        "type": "image",
+        "src": "gallery-2.jpg",
+        "alt": "Nate riding a bike through the Tetons",
+        "caption": "The autumn colors were in full effect, painting the landscape with vibrant hues of red, orange, and yellow. A dusting of snow covered the ground, creating even more contrast to the kaleidoscope of colors."
+      },
+      {
+        "type": "image",
+        "src": "gallery-3.jpg",
+        "alt": "Fallen leaves on the ground",
+        "caption": "The changing of seasons always brings a sense of reflection and rebirth. Change is inevitable — everything is continuously in motion, and I sometimes need to remind myself to stop and appreciate that moment, because that moment it will never happen again."
+      },
+      {
+        "type": "image",
+        "src": "gallery-4.jpg",
+        "alt": "Nate looking out at the mountainscape",
+        "caption": "The more time you spend out in the mountains, you begin to realize how small you really are."
+      }
+    ]
+  },
+  "links": [
+    {
+      "icon": "outside-icon.png",
+      "label": "Outside Magazine",
+      "url": "https://www.outsideonline.com/"
+    }
+  ],
+  "position": {
+    "x": 0,
+    "y": 0
+  },
+  "metadata": {
+    "date": "2024",
+    "technologies": ["React", "D3.js", "Node.js", "PostgreSQL"],
+    "status": "in-progress",
+    "hideToolset": true
+  }
+}

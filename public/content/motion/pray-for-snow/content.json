@@ -1,0 +1,24 @@
+{
+  "id": "pray-for-snow",
+  "title": "Pray for Snow",
+  "description": "Each winter season 10 Barrel Brewing holds a Pray for Snow party. The party signifies the release of their winter ale, accompanied by a special event featuring a snowsports movie. \n\n I was tasked with creating the movie title introduction. Using Adobe Illustrator and After Effects, I designed a visually appealing title that captured the essence of the event.",
+  "shortDescription": "Project Overview",
+  "thumbnailUrl": "thumbnail.mp4",
+
+  "links": [
+    {
+      "icon": "10bb-icon.png",
+      "label": "10 Barrel Brewing",
+      "url": "https://10barrel.com/"
+    }
+  ],
+  "position": {
+    "x": 0,
+    "y": 0
+  },
+  "metadata": {
+    "date": "2024",
+    "technologies": ["Visual", "Motion"],
+    "status": "completed"
+  }
+}

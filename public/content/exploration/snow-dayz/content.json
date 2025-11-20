@@ -1,0 +1,23 @@
+{
+  "id": "snow-dayz",
+  "title": "Snow Dayz",
+  "description": "I have a habit of carving faces into snow features along the skin track — little companions to mark the day. On this particular outing, one of those shapes looked uncannily like a fish. Idea born! Using a mix of still photos, video, After Effects, and Kaiber AI, I decided to bring the snow fish to life. Things can get pretty weird out there in the snow dayz.",
+  "shortDescription": "Exploration Overview",
+  "thumbnailUrl": "thumbnail.mp4",
+  "links": [
+    {
+      "icon": "insta-icon.png",
+      "label": "View on Instagram",
+      "url": "https://www.instagram.com/reel/DGR7olNukXi/"
+    }
+  ],
+  "position": {
+    "x": 0,
+    "y": 0
+  },
+  "metadata": {
+    "date": "2024",
+    "technologies": ["Videography", "AI"],
+    "status": "completed"
+  }
+}

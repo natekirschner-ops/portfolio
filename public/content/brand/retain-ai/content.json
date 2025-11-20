@@ -1,0 +1,60 @@
+{
+  "id": "retain-ai",
+  "title": "RetainAI",
+  "description": "A comprehensive brand identity and visual system for an AI-powered customer retention platform that helps businesses reduce churn and maximize customer lifetime value through predictive analytics and personalized engagement strategies.\n\n**Brand Design Highlights:**\n- **Strategic Positioning**: Trustworthy AI that prioritizes human relationships over algorithms\n- **Visual Identity**: Modern, approachable design that demystifies complex AI technology\n- **Brand Architecture**: Scalable system supporting multiple product lines and market segments\n- **Digital Ecosystem**: Cohesive brand experience across web, mobile, and enterprise applications\n- **Messaging Framework**: Clear communication that translates technical capabilities into business value\n- **Market Differentiation**: Distinctive brand presence in the crowded AI/SaaS marketplace\n\nRetainAI's brand identity successfully positions cutting-edge AI technology as an accessible, trustworthy partner in building lasting customer relationships, driving significant market adoption and investor confidence.",
+  "shortDescription": "Brand Overview",
+  "thumbnailUrl": "thumbnail.jpg",
+  "media": [
+    {
+      "type": "image",
+      "src": "logo-system.jpg",
+      "alt": "RetainAI logo system and variations",
+      "caption": "Complete logo system showing primary mark, variations, and application guidelines",
+      "aspectRatio": "auto"
+    },
+    {
+      "type": "image",
+      "src": "brand-applications.jpg",
+      "alt": "Brand applications across digital touchpoints",
+      "caption": "Brand identity applied across website, mobile app, and marketing materials",
+      "aspectRatio": "auto"
+    },
+    {
+      "type": "image",
+      "src": "brand-guidelines.jpg",
+      "alt": "Brand guidelines and visual standards",
+      "caption": "Comprehensive brand guidelines covering typography, color, and usage standards",
+      "aspectRatio": "auto"
+    }
+  ],
+  "links": [
+    {
+      "icon": "retainai-icon.png",
+      "label": "RetainAI Platform",
+      "url": "https://retainai.com"
+    },
+    {
+      "icon": "behance-icon.png",
+      "label": "View on Behance",
+      "url": "https://behance.net/gallery/retainai-brand"
+    }
+  ],
+  "position": {
+    "x": 0,
+    "y": 0
+  },
+  "metadata": {
+    "date": "2024",
+    "technologies": [
+      "Brand Strategy",
+      "Visual Identity",
+      "Logo Design",
+      "Typography",
+      "Color Theory",
+      "Digital Branding",
+      "Brand Guidelines",
+      "Market Positioning"
+    ],
+    "status": "completed"
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "id": "peruvian-mountain-rides",
+  "title": "Peruvian Mountain Rides",
+  "description": "A premier adventure tourism company connecting riders with Peru's spectacular Andes mountains through guided mountain biking expeditions.\n\n**Experience Highlights:**\n- **Sacred Valley Adventures**: Epic single-track descents through ancient Incan landscapes\n- **High Altitude Thrills**: Technical mountain biking at elevations over 12,000 feet\n- **Cultural Immersion**: Authentic encounters with local communities and traditions\n- **Professional Guiding**: Expert local guides ensuring safety and unforgettable experiences\n- **Sustainable Tourism**: Supporting local economies while preserving mountain environments\n\nPeruvian Mountain Rides offers riders the chance to experience Peru's breathtaking mountain terrain while contributing to sustainable adventure tourism in the region.",
+  "shortDescription": "Project Overview",
+  "thumbnailUrl": "thumbnail.mp4",
+  "media": [
+    {
+      "type": "image",
+      "src": "gallery-1.jpg",
+      "alt": "Mountain bikers on Sacred Valley trail",
+      "caption": "Riders navigating technical single-track with spectacular Andean mountain views",
+      "aspectRatio": "auto"
+    },
+    {
+      "type": "image",
+      "src": "gallery-2.jpg",
+      "alt": "High altitude mountain biking adventure",
+      "caption": "Epic descent through Peru's high-altitude terrain at over 12,000 feet elevation",
+      "aspectRatio": "auto"
+    },
+    {
+      "type": "image",
+      "src": "gallery-3.jpg",
+      "alt": "Group of mountain bikers with local guide",
+      "caption": "Professional guides leading riders through ancient Incan landscapes",
+      "aspectRatio": "auto"
+    }
+  ],
+  "links": [
+    {
+      "icon": "pmr-icon.png",
+      "label": "Peruvian Mountain Rides",
+      "url": "https://www.peruvianmountainrides.com/"
+    }
+  ],
+  "position": {
+    "x": 0,
+    "y": 0
+  },
+  "metadata": {
+    "date": "2024",
+    "technologies": [
+      "Adventure Tourism",
+      "Mountain Biking",
+      "Sustainable Travel",
+      "Cultural Exchange",
+      "High Altitude Guiding",
+      "Eco-Tourism"
+    ],
+    "status": "completed"
+  }
+}

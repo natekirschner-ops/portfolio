@@ -1,0 +1,44 @@
+{
+  "id": "beers-on-trails",
+  "title": "Beers on Trails",
+  "description": "Connecting beer drinkers and trail goers, Beers on Trails is a mobile-first web app that unites beer and outdoor enthusiasts through modern location-based technology. 10 Barrel Brewing set out to bridge the gap between tech and active lifestyles—creating a platform that connects beer lovers across the country while they’re out exploring.\n\nWe were tasked with designing an MVP to help 10 Barrel attract potential partners and promote the concept. I led product design, creating an experience that features interactive trail maps, brewery discovery, and social sharing of outdoor beer adventures.",
+  "shortDescription": "Connecting beer drinkers and trail goers.",
+  "thumbnailUrl": "thumbnail.mp4",
+  "media": {
+    "layout": "grid",
+    "columns": 1,
+    "items": [
+      {
+        "type": "video",
+        "aspectRatio": "auto",
+        "src": "gallery-1.mp4",
+        "alt": "Authentication screen for  Beers on Trails",
+        "caption": "Pulling from 10 Barrel Brewing's brand guidelines, I created a visual language that reflects the brand's personality and values. I created a custom logo and iconset referenceing the brand's color palette, while blending them with 3D elements and interactions."
+      },
+      {
+        "type": "image",
+        "aspectRatio": "auto",
+        "src": "gallery-2.png",
+        "alt": "Multiple screens of Beers on Trails ",
+        "caption": "Simple, big, bold — 10 Barrel Brewing's philosophy, which translates beautifully into the users' experience and interface. Here are a few designs that showcase the consistent visual language and design."
+      }
+    ]
+  },
+  "links": [
+    {
+      "icon": "10bb-icon.png",
+      "label": "10 Barrel Brewing",
+      "url": "https://10barrel.com/"
+    }
+  ],
+  "position": {
+    "x": 0,
+    "y": 0
+  },
+  "metadata": {
+    "date": "2024",
+    "technologies": ["UX", "Visual", "Motion", "Design System"],
+    "status": "completed",
+    "hideToolset": false
+  }
+}

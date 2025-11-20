@@ -1,26 +1,213 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+    --background: #ffffff;
+    --foreground: #1a202c;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+* {
+    box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+    scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+    background: var(--background);
+    color: var(--foreground);
+    font-family:
+        var(--font-thicccboi),
+        var(--font-sans),
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        "Roboto",
+        sans-serif;
+    font-weight: 300;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(26, 32, 44, 0.05);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(26, 32, 44, 0.2);
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(26, 32, 44, 0.3);
+}
+
+/* Selection */
+::selection {
+    background: rgba(26, 32, 44, 0.1);
+    color: #1a202c;
+}
+
+::-moz-selection {
+    background: rgba(26, 32, 44, 0.1);
+    color: #1a202c;
+}
+
+/* Focus styles for accessibility */
+*:focus-visible {
+    outline: 2px solid rgba(26, 32, 44, 0.5);
+    outline-offset: 2px;
+}
+
+/* Font utility classes - used throughout components */
+.font-thicccboi {
+    font-family: var(--font-thicccboi), sans-serif;
+}
+
+.font-playfair {
+    font-family: var(--font-playfair), serif;
+}
+
+/* Noise background enhancement */
+.noise-texture {
+    position: relative;
+    overflow: hidden;
+}
+
+.noise-texture::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image:
+        radial-gradient(
+            circle at 25% 25%,
+            transparent 1px,
+            rgba(0, 0, 0, 0.005) 1px
+        ),
+        radial-gradient(
+            circle at 75% 75%,
+            transparent 1px,
+            rgba(0, 0, 0, 0.003) 1px
+        );
+    background-size:
+        8px 8px,
+        12px 12px;
+    pointer-events: none;
+    z-index: 1;
+    animation: subtle-grain 3s ease-in-out infinite alternate;
+}
+
+@keyframes subtle-grain {
+    0% {
+        opacity: 0.4;
+        transform: translate(0, 0);
+    }
+    25% {
+        opacity: 0.6;
+        transform: translate(0.5px, 0.5px);
+    }
+    50% {
+        opacity: 0.5;
+        transform: translate(-0.5px, 0px);
+    }
+    75% {
+        opacity: 0.7;
+        transform: translate(0px, -0.5px);
+    }
+    100% {
+        opacity: 0.4;
+        transform: translate(-0.5px, -0.5px);
+    }
+}
+
+/* Responsive typography */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    :root {
+        --background: #ffffff;
+        --foreground: #000000;
+    }
+}
+
+/* Prose styles for portfolio descriptions */
+.prose {
+    color: inherit;
+}
+
+.prose p {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+}
+
+.prose strong {
+    font-weight: 600;
+    color: var(--foreground);
+}
+
+.prose em {
+    font-style: italic;
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* Enhanced contrast for better noise visibility */
+body {
+    background: var(--background);
+    background-image:
+        radial-gradient(
+            circle at 20% 80%,
+            rgba(0, 0, 0, 0.001) 1px,
+            transparent 1px
+        ),
+        radial-gradient(
+            circle at 80% 20%,
+            rgba(0, 0, 0, 0.002) 1px,
+            transparent 1px
+        );
+    background-size:
+        16px 16px,
+        20px 20px;
+    background-attachment: fixed;
+}
+
+/* Print styles */
+@media print {
+    body {
+        background: white;
+        color: black;
+    }
+
+    .noise-texture::before {
+        display: none;
+    }
 }

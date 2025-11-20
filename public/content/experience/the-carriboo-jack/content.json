@@ -1,0 +1,52 @@
+{
+  "id": "the-carriboo-jack",
+  "title": "The Carriboo Jack",
+  "description": "A premier **mountain bike race** that celebrates the rugged spirit of backcountry cycling through Idaho's stunning wilderness.\n\n**Event Highlights:**\n- Multi-day backcountry mountain bike race\n- **Challenging terrain** through remote wilderness areas\n- Community-driven event celebrating outdoor adventure\n- Self-supported racing format\n- Connection with local outdoor culture\n\nDesigned for serious mountain bikers who seek adventure beyond traditional trail networks, pushing the boundaries of what's possible on two wheels in the backcountry.",
+  "shortDescription": "A cult-classic, and most excellent adventure.",
+  "thumbnailUrl": "thumbnail.jpg",
+  "media": [
+    {
+      "type": "image",
+      "src": "gallery-1.jpg",
+      "alt": "Riders navigating challenging backcountry terrain",
+      "caption": "Participants tackling the demanding wilderness sections of the race course",
+      "aspectRatio": "auto"
+    },
+    {
+      "type": "image",
+      "src": "gallery-2.jpg",
+      "alt": "Mountain bike race checkpoint in scenic location",
+      "caption": "Remote checkpoint showcasing the stunning Idaho backcountry landscape",
+      "aspectRatio": "auto"
+    },
+    {
+      "type": "image",
+      "src": "gallery-3.jpg",
+      "alt": "Community gathering at race event",
+      "caption": "The heart of Carriboo Jack - bringing together the mountain biking community",
+      "aspectRatio": "auto"
+    }
+  ],
+  "links": [
+    {
+      "icon": "mbt-icon.png",
+      "label": "Mountain Bike the Tetons",
+      "url": "https://www.mountainbiketetons.org/"
+    }
+  ],
+  "position": {
+    "x": 0,
+    "y": 0
+  },
+  "metadata": {
+    "date": "2024",
+    "technologies": [
+      "Event Planning & Management",
+      "Storytelling",
+      "Marketing",
+      "Visual",
+      "UX"
+    ],
+    "status": "completed"
+  }
+}

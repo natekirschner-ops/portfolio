@@ -1,0 +1,60 @@
+{
+  "id": "creative-stillness",
+  "title": "Creative Stillness",
+  "description": "An immersive meditation on the paradox of stillness as a generative force in creativity. Creative Stillness explores how moments of pause, silence, and contemplation become the fertile ground from which new ideas emerge.\n\n**Exploration Highlights:**\n- **Breath Visualization**: Real-time visualization of breathing patterns as generative art elements\n- **Ambient Interaction**: Subtle environmental responses to micro-movements and presence\n- **Sound Landscapes**: Minimalist audio environments that evolve with extended stillness\n- **Temporal Expansion**: Time perception manipulation through gradual visual and audio shifts\n- **Biometric Integration**: Heart rate and stress level visualization as artistic elements\n- **Meditative Interface**: Interface design that encourages contemplation over action\n\nCreative Stillness challenges our culture's bias toward constant motion and productivity, proposing that the most profound creative insights often emerge from states of deliberate quietude and receptive awareness.",
+  "shortDescription": "Exploration Overview",
+  "thumbnailUrl": "thumbnail.mp4",
+  "media": [
+    {
+      "type": "image",
+      "src": "gallery-1.jpg",
+      "alt": "Breath visualization in motion",
+      "caption": "Ethereal visualization of breathing patterns creating organic, flowing forms",
+      "aspectRatio": "auto"
+    },
+    {
+      "type": "image",
+      "src": "gallery-2.jpg",
+      "alt": "Minimal interface encouraging stillness",
+      "caption": "Clean, contemplative interface designed to fade into the background during extended use",
+      "aspectRatio": "auto"
+    },
+    {
+      "type": "video",
+      "src": "stillness-session.mp4",
+      "alt": "Extended stillness session visualization",
+      "caption": "Time-lapse showing the gradual evolution of visuals during a 20-minute stillness session",
+      "aspectRatio": "video"
+    }
+  ],
+  "links": [
+    {
+      "icon": "experience-icon.png",
+      "label": "Enter Stillness",
+      "url": "https://creativestillness.space"
+    },
+    {
+      "icon": "research-icon.png",
+      "label": "Research Documentation",
+      "url": "https://research.creativestillness.space"
+    }
+  ],
+  "position": {
+    "x": 0,
+    "y": 0
+  },
+  "metadata": {
+    "date": "2024",
+    "technologies": [
+      "WebRTC",
+      "Web Audio API",
+      "Canvas API",
+      "WebGL",
+      "Biometric Sensors",
+      "Machine Learning",
+      "Meditation Research",
+      "Creative Coding"
+    ],
+    "status": "completed"
+  }
+}

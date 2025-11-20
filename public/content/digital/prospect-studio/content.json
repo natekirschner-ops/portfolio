@@ -1,0 +1,60 @@
+{
+  "id": "prospect-studio",
+  "title": "Prospect Studio",
+  "description": "A comprehensive digital platform designed to streamline creative project management and client collaboration for design studios and creative agencies.\n\n**Platform Features:**\n- **Project Management**: Intuitive task tracking and milestone management for creative workflows\n- **Client Portal**: Secure client access for project reviews, feedback, and approvals\n- **Asset Management**: Centralized storage and organization for creative assets and brand materials\n- **Time Tracking**: Built-in time tracking with detailed reporting for accurate project billing\n- **Team Collaboration**: Real-time collaboration tools designed specifically for creative teams\n- **Brand Guidelines**: Digital brand guide creation and management system\n\nProspect Studio transforms how creative teams manage projects, collaborate with clients, and deliver exceptional creative work on time and within budget.",
+  "shortDescription": "Project Overview",
+  "thumbnailUrl": "thumbnail.jpg",
+  "media": [
+    {
+      "type": "image",
+      "src": "gallery-1.jpg",
+      "alt": "Prospect Studio dashboard interface",
+      "caption": "Clean, intuitive dashboard showing project overview and team activity",
+      "aspectRatio": "auto"
+    },
+    {
+      "type": "image",
+      "src": "gallery-2.jpg",
+      "alt": "Client collaboration interface",
+      "caption": "Streamlined client portal for project reviews and feedback collection",
+      "aspectRatio": "auto"
+    },
+    {
+      "type": "image",
+      "src": "gallery-3.jpg",
+      "alt": "Asset management system",
+      "caption": "Comprehensive asset library with smart organization and search capabilities",
+      "aspectRatio": "auto"
+    }
+  ],
+  "links": [
+    {
+      "icon": "ps-icon.png",
+      "label": "Prospect Studio",
+      "url": "https://prospectstudio.com"
+    },
+    {
+      "icon": "github-icon.png",
+      "label": "View Documentation",
+      "url": "https://docs.prospectstudio.com"
+    }
+  ],
+  "position": {
+    "x": 0,
+    "y": 0
+  },
+  "metadata": {
+    "date": "2024",
+    "technologies": [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Node.js",
+      "PostgreSQL",
+      "Tailwind CSS",
+      "Prisma",
+      "AWS S3"
+    ],
+    "status": "completed"
+  }
+}
