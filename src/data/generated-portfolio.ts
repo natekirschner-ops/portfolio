@@ -1,5 +1,5 @@
 // Auto-generated file - DO NOT EDIT MANUALLY
-// Generated on 2025-11-20T17:04:42.963Z
+// Generated on 2025-11-20T20:01:17.343Z
 // Use 'npm run generate:content' to regenerate
 
 import { PortfolioItem } from "../types/portfolio";
@@ -58,8 +58,8 @@ export const portfolioItems: PortfolioItem[] = [
       }
     ],
     "position": {
-      "x": 546,
-      "y": 24
+      "x": 547,
+      "y": 14
     },
     "metadata": {
       "date": "2024",
@@ -91,8 +91,8 @@ export const portfolioItems: PortfolioItem[] = [
       }
     ],
     "position": {
-      "x": -388,
-      "y": 395
+      "x": -391,
+      "y": 380
     },
     "metadata": {
       "date": "2024",
@@ -141,8 +141,8 @@ export const portfolioItems: PortfolioItem[] = [
       }
     ],
     "position": {
-      "x": 19,
-      "y": -544
+      "x": 64,
+      "y": -555
     },
     "metadata": {
       "date": "2024",
@@ -191,8 +191,8 @@ export const portfolioItems: PortfolioItem[] = [
       }
     ],
     "position": {
-      "x": 354,
-      "y": 423
+      "x": 291,
+      "y": 456
     },
     "metadata": {
       "date": "2024",
@@ -250,7 +250,7 @@ export const portfolioItems: PortfolioItem[] = [
     ],
     "position": {
       "x": -538,
-      "y": -78
+      "y": -132
     },
     "metadata": {
       "date": "2024",
@@ -305,8 +305,8 @@ export const portfolioItems: PortfolioItem[] = [
       }
     ],
     "position": {
-      "x": 460,
-      "y": -288
+      "x": -130,
+      "y": 776
     },
     "metadata": {
       "date": "2024",
@@ -364,8 +364,8 @@ export const portfolioItems: PortfolioItem[] = [
       }
     ],
     "position": {
-      "x": -318,
-      "y": 957
+      "x": -971,
+      "y": 492
     },
     "metadata": {
       "date": "2024",
@@ -397,8 +397,8 @@ export const portfolioItems: PortfolioItem[] = [
       }
     ],
     "position": {
-      "x": -466,
-      "y": -905
+      "x": -511,
+      "y": -883
     },
     "metadata": {
       "date": "2024",
@@ -454,8 +454,8 @@ export const portfolioItems: PortfolioItem[] = [
       }
     ],
     "position": {
-      "x": 925,
-      "y": 390
+      "x": 911,
+      "y": 417
     },
     "metadata": {
       "date": "2024",
@@ -512,8 +512,8 @@ export const portfolioItems: PortfolioItem[] = [
       }
     ],
     "position": {
-      "x": -937,
-      "y": 375
+      "x": -972,
+      "y": -481
     },
     "metadata": {
       "date": "2024",

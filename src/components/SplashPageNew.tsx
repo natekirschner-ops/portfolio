@@ -222,21 +222,37 @@ export const SplashPageNew = () => {
 const SplineBackground = ({ onLoad }: { onLoad: () => void }) => {
   const [SplineComponent, setSplineComponent] = useState<any>(null);
   const [hasError, setHasError] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     const loadSpline = async () => {
       try {
         console.log("Loading Spline component...");
-        const { default: Spline } = await import("@splinetool/react-spline");
+        setIsLoading(true);
+
+        // Add timeout for Spline loading
+        const loadPromise = import("@splinetool/react-spline");
+        const timeoutPromise = new Promise((_, reject) =>
+          setTimeout(() => reject(new Error("Spline load timeout")), 10000),
+        );
+
+        const { default: Spline } = (await Promise.race([
+          loadPromise,
+          timeoutPromise,
+        ])) as any;
         console.log("Spline component loaded successfully");
         setSplineComponent(() => Spline);
+        setIsLoading(false);
       } catch (error) {
         console.warn("Spline failed to load, using fallback:", error);
         setHasError(true);
+        setIsLoading(false);
+        // Still call onLoad so UI doesn't hang
+        setTimeout(onLoad, 1000);
       }
     };
     loadSpline();
-  }, []);
+  }, [onLoad]);
 
   const handleLoad = () => {
     console.log(
@@ -252,6 +268,15 @@ const SplineBackground = ({ onLoad }: { onLoad: () => void }) => {
     setHasError(true);
     onLoad(); // Still call onLoad so UI doesn't hang
   };
+
+  // Show loading state
+  if (isLoading && !hasError) {
+    return (
+      <div className="w-full h-full bg-gradient-to-br from-slate-50 via-gray-50 to-stone-50 flex items-center justify-center">
+        <div className="text-gray-400 text-sm">Loading 3D scene...</div>
+      </div>
+    );
+  }
 
   // Fallback background
   if (hasError || !SplineComponent) {
@@ -282,6 +307,11 @@ const SplineBackground = ({ onLoad }: { onLoad: () => void }) => {
         scene="/scene-spline.splinecode"
         onLoad={handleLoad}
         onError={handleError}
+        style={{
+          width: "100%",
+          height: "100%",
+          background: "transparent",
+        }}
       />
     </div>
   );
