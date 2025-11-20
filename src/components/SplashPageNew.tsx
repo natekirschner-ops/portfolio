@@ -143,6 +143,23 @@ export const SplashPageNew = () => {
               }`}
             >
               <a
+                href="https://app.seismic.co/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm font-medium text-gray-500 hover:text-red-400 transition-colors"
+              >
+                Currently @ Seismic
+              </a>
+            </div>
+
+            {/* Bottom Links - Equally Spaced */}
+            {/* Contact Link - Far Left */}
+            <div
+              className={`absolute bottom-6 left-6 pointer-events-auto transition-opacity duration-1000 delay-400 ${
+                showUI ? "opacity-100" : "opacity-0"
+              }`}
+            >
+              <a
                 href="mailto:contact@nathankirschner.com"
                 className="text-sm font-medium text-gray-500 hover:text-red-400 transition-colors"
               >
@@ -150,27 +167,12 @@ export const SplashPageNew = () => {
               </a>
             </div>
 
-            {/* Current Project Link - Lower Left */}
+            {/* LinkedIn Link - Center Left */}
             <div
-              className={`absolute bottom-6 left-6 pointer-events-auto transition-opacity duration-1000 delay-400 ${
+              className={`absolute bottom-6 pointer-events-auto transition-opacity duration-1000 delay-500 ${
                 showUI ? "opacity-100" : "opacity-0"
               }`}
-            >
-              <a
-                href="https://app.seismic.co/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-sm font-medium text-gray-500 hover:text-red-400 transition-colors"
-              >
-                Current @ Seismic
-              </a>
-            </div>
-
-            {/* LinkedIn Link - Lower Right */}
-            <div
-              className={`absolute bottom-6 right-6 pointer-events-auto transition-opacity duration-1000 delay-600 ${
-                showUI ? "opacity-100" : "opacity-0"
-              }`}
+              style={{ left: "33.33%" }}
             >
               <a
                 href="https://linkedin.com/in/natekirschner"
@@ -180,6 +182,34 @@ export const SplashPageNew = () => {
               >
                 LinkedIn
               </a>
+            </div>
+
+            {/* Instagram Link - Center Right */}
+            <div
+              className={`absolute bottom-6 pointer-events-auto transition-opacity duration-1000 delay-600 ${
+                showUI ? "opacity-100" : "opacity-0"
+              }`}
+              style={{ left: "66.66%" }}
+            >
+              <a
+                href="https://www.instagram.com/nkirschner/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm font-medium text-gray-500 hover:text-red-400 transition-colors"
+              >
+                Instagram
+              </a>
+            </div>
+
+            {/* Copyright - Far Right */}
+            <div
+              className={`absolute bottom-6 right-6 pointer-events-none transition-opacity duration-1000 delay-700 ${
+                showUI ? "opacity-100" : "opacity-0"
+              }`}
+            >
+              <span className="text-sm font-medium text-gray-500">
+                ©{new Date().getFullYear()}
+              </span>
             </div>
           </div>
         </section>
