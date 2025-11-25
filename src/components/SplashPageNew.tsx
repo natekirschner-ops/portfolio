@@ -272,9 +272,7 @@ const SplineBackground = ({ onLoad }: { onLoad: () => void }) => {
   // Show loading state
   if (isLoading && !hasError) {
     return (
-      <div className="w-full h-full bg-gradient-to-br from-slate-50 via-gray-50 to-stone-50 flex items-center justify-center">
-        <div className="text-gray-400 text-sm">Loading 3D scene...</div>
-      </div>
+      <div className="w-full h-full bg-gradient-to-br from-slate-50 via-gray-50 to-stone-50"></div>
     );
   }
 
