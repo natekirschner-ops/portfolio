@@ -32,32 +32,48 @@ A personal portfolio website for Nathan Kirschner featuring a minimal splash pag
 ### Core Features
 The splash page (`SplashPageNew.tsx`) includes:
 - **3D Spline Background**: Dynamic intro scene with fallback system
+- **Center Header**: "Nathan Kirschner" with "inspire.design.experience" subheader
 - **Noise Background**: Subtle texture overlay (0.015 opacity)
 - **Custom Cursor**: 12px circle (#6D597A default, #E56B6F on hover)
 - **Navigation Links**: 6 strategically positioned elements
 - **Dynamic Copyright**: Automatically updates year
 
 ### Layout Structure
+**Desktop:**
 ```
       [Logo]                           [Projects]
-                    
-                SPLINE 3D BACKGROUND
+                     
+                Nathan Kirschner
+            inspire.design.experience
                 
   [Contact]    [LinkedIn]    [Instagram]       [©YYYY]
+```
+
+**Mobile:**
+```
+      [Logo]                           [Projects]
+                     
+                Nathan Kirschner
+            inspire.design.experience
+                
+            [Contact] [LinkedIn] [Instagram]
+                      [©YYYY]
 ```
 
 ### Animation Sequence
 After Spline loads + 2-second delay:
 1. **Logo**: 0ms (80% opacity)
 2. **Projects**: 200ms delay
-3. **Contact**: 400ms delay  
-4. **LinkedIn**: 500ms delay
-5. **Instagram**: 600ms delay
-6. **Copyright**: 700ms delay
+3. **Header/Subheader**: 300ms delay
+4. **Contact**: 400ms delay  
+5. **LinkedIn**: 500ms delay
+6. **Instagram**: 600ms delay
+7. **Copyright**: 700ms delay
 
 ### Link Configuration
 - **Logo**: Upper left, `/logo.svg` (triangle design)
 - **Projects**: Upper right, `href="/projects"`
+- **Header**: Center, "Nathan Kirschner" with subheader "inspire.design.experience"
 - **Contact**: Bottom left, `mailto:contact@nathankirschner.com`
 - **LinkedIn**: Bottom center-left, external link
 - **Instagram**: Bottom center-right, external link
@@ -108,8 +124,14 @@ SplashPageNew.tsx
 
 ### Typography
 - **Font**: System font stack with fallbacks
-- **Size**: `text-sm` (14px) for all links
-- **Weight**: `font-medium` for visual hierarchy
+- **Header**: `text-4xl` to `text-6xl` responsive, `font-light`, positioned 5% above center
+- **Subheader**: `text-lg` to `text-xl` responsive, `font-light` with `tracking-wide`
+- **Links**: `text-sm` (14px) with `font-medium`
+
+### Responsive Layout
+- **Desktop**: Single row footer with equal spacing
+- **Mobile**: Two-row footer (links on row 1, copyright on row 2)
+- **Breakpoint**: `sm` (640px) and above for desktop layout
 
 ### Logo Design
 - **File**: water.svg (triangle outline)
@@ -161,8 +183,7 @@ SplashPageNew.tsx
 {
   "exclude": [
     "node_modules",
-    "public/spline/**/*",
-    "public/spline-footer/**/*"
+    "public/spline/**/*"
   ]
 }
 ```
@@ -212,7 +233,7 @@ src/
 public/
 ├── logo.svg (triangle design)
 ├── favicon.svg (same triangle)
-├── scene-spline.splinecode
+├── scene-spline.splinecode (active 3D scene)
 └── content/ (portfolio items)
 ```
 
@@ -278,8 +299,24 @@ public/
 
 ### Recent Updates
 
-#### Logo & Favicon Update
+#### Mobile Responsive Footer Layout
 - **Date**: Latest
+- **Change**: Added responsive footer layout for mobile viewports
+- **Desktop**: Single row with equal spacing (Contact, LinkedIn, Instagram, Copyright)
+- **Mobile**: Two rows - Row 1: Contact/LinkedIn/Instagram, Row 2: Copyright
+- **Breakpoint**: `sm` (640px) for layout switching
+- **Impact**: Better mobile user experience and touch targets
+
+#### Header & Subheader Addition
+- **Date**: Previous
+- **Change**: Added centered "Nathan Kirschner" header with "inspire.design.experience" subheader
+- **Location**: Center of splash page, positioned 5% above exact center for better visual balance
+- **Styling**: Responsive text sizes, light font weight, gray color scheme
+- **Animation**: Fades in at 300ms delay
+- **Impact**: Clear brand identity and messaging
+
+#### Logo & Favicon Update
+- **Date**: Previous
 - **Change**: Replaced complex rectangles with simple triangle outline
 - **Files**: `public/logo.svg`, `public/favicon.svg`
 - **Design**: 136×118px triangle in #6D597A
@@ -320,11 +357,12 @@ public/
 - **Features**: Spline integration, custom cursor, staggered animations
 - **Architecture**: Single component with embedded fallback system
 
-#### Spline Integration
-- **Scene Source**: `public/spline/public/scene.splinecode`
+#### Spline Integration & File Cleanup
+- **Scene Source**: `public/spline/public/scene.splinecode` (copied to `/scene-spline.splinecode`)
 - **Implementation**: Async loading with error handling
 - **Fallback**: CSS particle animation
 - **Optimization**: Timeout protection, stable loading sequence
+- **Cleanup**: Removed unused `particles.splinecode`, `scene.splinecode`, and `spline-footer/` directory
 
 #### Performance Optimization
 - **GPU Acceleration**: Consistent use of `translate3d()`

@@ -26,7 +26,6 @@
   "exclude": [
     "node_modules",
     "public/spline/**/*",
-    "public/spline-footer/**/*",
     "**/*.splinecode",
     ".next",
     "out",

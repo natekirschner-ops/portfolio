@@ -136,7 +136,7 @@ export const SplashPageNew = () => {
               />
             </div>
 
-            {/* Contact Link - Upper Right */}
+            {/* Projects Link - Upper Right */}
             <div
               className={`absolute top-6 right-6 pointer-events-auto transition-opacity duration-1000 delay-200 ${
                 showUI ? "opacity-100" : "opacity-0"
@@ -148,68 +148,136 @@ export const SplashPageNew = () => {
                 rel="noopener noreferrer"
                 className="text-sm font-medium text-gray-500 hover:text-red-400 transition-colors cursor-none"
               >
-                Currently @ Seismic
+                Lead Product Designer @ Seismic
               </a>
             </div>
 
-            {/* Bottom Links - Equally Spaced */}
-            {/* Contact Link - Far Left */}
+            {/* Center Header */}
             <div
-              className={`absolute bottom-6 left-6 pointer-events-auto transition-opacity duration-1000 delay-400 ${
-                showUI ? "opacity-100" : "opacity-0"
-              }`}
+              className="absolute inset-0 flex flex-col items-center justify-center pointer-events-none"
+              style={{ transform: "translateY(-5%)" }}
             >
-              <a
-                href="mailto:contact@nathankirschner.com"
-                className="text-sm font-medium text-gray-500 hover:text-red-400 transition-colors cursor-none"
+              <div
+                className={`text-center transition-opacity duration-1000 delay-300 ${
+                  showUI ? "opacity-100" : "opacity-0"
+                }`}
               >
-                Contact
-              </a>
+                <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold uppercase text-gray-800 mb-2">
+                  Nathan Kirschner
+                </h1>
+                <p className="text-xl md:text-3xl text-gray-600 font-medium font-playfair italic tracking-wide">
+                  inspire. design. experience.
+                </p>
+              </div>
             </div>
 
-            {/* LinkedIn Link - Center Left */}
-            <div
-              className={`absolute bottom-6 pointer-events-auto transition-opacity duration-1000 delay-500 ${
-                showUI ? "opacity-100" : "opacity-0"
-              }`}
-              style={{ left: "33.33%" }}
-            >
-              <a
-                href="https://linkedin.com/in/natekirschner"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-sm font-medium text-gray-500 hover:text-red-400 transition-colors cursor-none"
+            {/* Bottom Links - Desktop: Row layout, Mobile: Stacked */}
+            {/* Desktop Layout */}
+            <div className="hidden sm:block">
+              {/* Contact Link - Far Left */}
+              <div
+                className={`absolute bottom-6 left-6 pointer-events-auto transition-opacity duration-1000 delay-400 ${
+                  showUI ? "opacity-100" : "opacity-0"
+                }`}
               >
-                LinkedIn
-              </a>
-            </div>
+                <a
+                  href="mailto:contact@nathankirschner.com"
+                  className="text-sm font-medium text-gray-500 hover:text-red-400 transition-colors"
+                >
+                  Contact
+                </a>
+              </div>
 
-            {/* Instagram Link - Center Right */}
-            <div
-              className={`absolute bottom-6 pointer-events-auto transition-opacity duration-1000 delay-600 ${
-                showUI ? "opacity-100" : "opacity-0"
-              }`}
-              style={{ left: "66.66%" }}
-            >
-              <a
-                href="https://www.instagram.com/nkirschner/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-sm font-medium text-gray-500 hover:text-red-400 transition-colors cursor-none"
+              {/* LinkedIn Link - Center Left */}
+              <div
+                className={`absolute bottom-6 pointer-events-auto transition-opacity duration-1000 delay-500 ${
+                  showUI ? "opacity-100" : "opacity-0"
+                }`}
+                style={{ left: "33.33%" }}
               >
-                Instagram
-              </a>
+                <a
+                  href="https://linkedin.com/in/nathankirschner"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm font-medium text-gray-500 hover:text-red-400 transition-colors"
+                >
+                  LinkedIn
+                </a>
+              </div>
+
+              {/* Instagram Link - Center Right */}
+              <div
+                className={`absolute bottom-6 pointer-events-auto transition-opacity duration-1000 delay-600 ${
+                  showUI ? "opacity-100" : "opacity-0"
+                }`}
+                style={{ left: "66.66%" }}
+              >
+                <a
+                  href="https://instagram.com/nathankirschner"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm font-medium text-gray-500 hover:text-red-400 transition-colors"
+                >
+                  Instagram
+                </a>
+              </div>
+
+              {/* Copyright - Far Right */}
+              <div
+                className={`absolute bottom-6 right-6 pointer-events-none transition-opacity duration-1000 delay-700 ${
+                  showUI ? "opacity-100" : "opacity-0"
+                }`}
+              >
+                <span className="text-sm font-medium text-gray-500">
+                  ©{new Date().getFullYear()}
+                </span>
+              </div>
             </div>
 
-            {/* Copyright - Far Right */}
-            <div
-              className={`absolute bottom-6 right-6 pointer-events-none transition-opacity duration-1000 delay-700 ${
-                showUI ? "opacity-100" : "opacity-0"
-              }`}
-            >
-              <span className="text-sm font-medium text-gray-500">
-                ©{new Date().getFullYear()}
-              </span>
+            {/* Mobile Layout */}
+            <div className="block sm:hidden">
+              {/* Row 1: Contact, LinkedIn, Instagram */}
+              <div
+                className={`absolute bottom-12 left-1/2 transform -translate-x-1/2 pointer-events-auto transition-opacity duration-1000 delay-400 ${
+                  showUI ? "opacity-100" : "opacity-0"
+                }`}
+              >
+                <div className="flex space-x-8 justify-center">
+                  <a
+                    href="mailto:contact@nathankirschner.com"
+                    className="text-sm font-medium text-gray-500 hover:text-red-400 transition-colors"
+                  >
+                    Contact
+                  </a>
+                  <a
+                    href="https://linkedin.com/in/nathankirschner"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm font-medium text-gray-500 hover:text-red-400 transition-colors"
+                  >
+                    LinkedIn
+                  </a>
+                  <a
+                    href="https://instagram.com/nathankirschner"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm font-medium text-gray-500 hover:text-red-400 transition-colors"
+                  >
+                    Instagram
+                  </a>
+                </div>
+              </div>
+
+              {/* Row 2: Copyright */}
+              <div
+                className={`absolute bottom-6 left-1/2 transform -translate-x-1/2 pointer-events-none transition-opacity duration-1000 delay-700 ${
+                  showUI ? "opacity-100" : "opacity-0"
+                }`}
+              >
+                <span className="text-sm font-medium text-gray-500">
+                  ©{new Date().getFullYear()}
+                </span>
+              </div>
             </div>
           </div>
         </section>

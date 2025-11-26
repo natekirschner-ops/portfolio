@@ -44,4 +44,3 @@ next-env.d.ts
 /public/spline/node_modules/
 /public/spline/dist/
 /public/spline/.cache/
-/public/spline-footer/node_modules/

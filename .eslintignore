@@ -16,7 +16,6 @@ node_modules/
 
 # Spline project files (external dependencies)
 public/spline/
-public/spline-footer/
 
 # Environment variables
 .env.local
