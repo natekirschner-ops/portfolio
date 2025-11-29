@@ -182,7 +182,7 @@ export const SplashPageNew = () => {
               >
                 <a
                   href="mailto:contact@nathankirschner.com"
-                  className="text-sm font-medium text-gray-500 hover:text-red-400 transition-colors"
+                  className="text-sm font-medium text-gray-500 hover:text-red-400 transition-colors cursor-none"
                 >
                   Contact
                 </a>
@@ -199,7 +199,7 @@ export const SplashPageNew = () => {
                   href="https://linkedin.com/in/nathankirschner"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-sm font-medium text-gray-500 hover:text-red-400 transition-colors"
+                  className="text-sm font-medium text-gray-500 hover:text-red-400 transition-colors cursor-none"
                 >
                   LinkedIn
                 </a>
@@ -216,7 +216,7 @@ export const SplashPageNew = () => {
                   href="https://instagram.com/nathankirschner"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-sm font-medium text-gray-500 hover:text-red-400 transition-colors"
+                  className="text-sm font-medium text-gray-500 hover:text-red-400 transition-colors cursor-none"
                 >
                   Instagram
                 </a>

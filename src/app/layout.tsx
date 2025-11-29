@@ -69,7 +69,7 @@ const thicccboi = localFont({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://nathankirschner.com"),
-  title: "NATHAN KIRSCHNER ▿ inspire. design. experience.",
+  title: "NATHAN KIRSCHNER",
   description:
     "Multi-disciplinary designer guided by curiosity, intuition, and that initial spark igniting a voyage into the unknown.",
   keywords: [
@@ -97,7 +97,7 @@ export const metadata: Metadata = {
     apple: "/favicon.svg",
   },
   openGraph: {
-    title: "NATHAN KIRSCHNER ▿ inspire. design. experience.",
+    title: "NATHAN KIRSCHNER",
     description:
       "Multi-disciplinary designer guided by curiosity, intuition, and that initial spark igniting a voyage into the unknown.",
     url: "https://nathankirschner.com",
@@ -109,7 +109,7 @@ export const metadata: Metadata = {
         url: "/og-image.jpg", // Add your social media preview image here
         width: 1200,
         height: 630,
-        alt: "NATHAN KIRSCHNER ▿ inspire. design. experience.",
+        alt: "NATHAN KIRSCHNER",
       },
     ],
   },
