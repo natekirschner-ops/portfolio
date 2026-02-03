@@ -45,6 +45,7 @@ export interface PortfolioItem {
     technologies?: string[];
     status?: "completed" | "in-progress" | "concept";
     hideToolset?: boolean;
+    projectType?: string;
   };
 }
 

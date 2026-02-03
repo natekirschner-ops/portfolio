@@ -14,8 +14,7 @@ node_modules/
 /build/
 /dist/
 
-# Spline project files (external dependencies)
-public/spline/
+
 
 # Environment variables
 .env.local

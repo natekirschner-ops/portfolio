@@ -7,14 +7,13 @@ export const customDetailViews: Record<
   string,
   () => Promise<{ default: DetailViewComponent }>
 > = {
-  // Custom detail views temporarily disabled to focus on base template
-  // Projects
-  // "beers-on-trails": () => import("./beers-on-trails/DetailView"),
-  // Add project detail views here as they are created
-  // Experiments
-  // Add experiment detail views here as they are created
-  // Insights
-  // Add insight detail views here as they are created
+  // Custom detail views for all projects
+  ideation: () => import("./ideation"),
+  "the-carriboo-jack": () => import("./the-carriboo-jack"),
+  exposed: () => import("./exposed"),
+  "snow-dayz": () => import("./snow-dayz"),
+  "avara-medical": () => import("./avara-medical"),
+  seismic: () => import("./seismic"),
 };
 
 // Helper function to check if a custom detail view exists

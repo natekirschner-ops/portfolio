@@ -52,7 +52,7 @@ src/
 ├── app/
 │   └── page.tsx          # Main entry point
 └── components/
-    └── SplashPageNew.tsx # Main splash page component
+    └── Portfolio.tsx     # Main portfolio component
 
 public/
 ├── logo.svg              # Triangle logo design

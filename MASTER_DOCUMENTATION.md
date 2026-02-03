@@ -30,7 +30,7 @@ A personal portfolio website for Nathan Kirschner featuring a minimal splash pag
 ## Splash Page Implementation
 
 ### Core Features
-The splash page (`SplashPageNew.tsx`) includes:
+The main portfolio page (`Portfolio.tsx`) includes:
 - **3D Spline Background**: Dynamic intro scene with fallback system
 - **Center Header**: "Nathan Kirschner" with "inspire.design.experience" subheader
 - **Noise Background**: Subtle texture overlay (0.015 opacity)
@@ -85,7 +85,7 @@ After Spline loads + 2-second delay:
 
 ### Component Structure
 ```
-SplashPageNew.tsx
+Portfolio.tsx
 ├── SplineBackground component
 │   ├── Dynamic import of @splinetool/react-spline
 │   ├── Error handling & fallback system
@@ -226,7 +226,7 @@ src/
 │   ├── page.tsx (main entry point)
 │   └── layout.tsx
 ├── components/
-│   └── SplashPageNew.tsx
+│   └── Portfolio.tsx
 └── data/
     └── generated-portfolio.ts
 
