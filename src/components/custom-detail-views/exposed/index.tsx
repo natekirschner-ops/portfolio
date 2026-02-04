@@ -1,6 +1,7 @@
 "use client";
 
 import { PortfolioItem } from "../../../types/portfolio";
+import { ImageWithLoader } from "../../ImageWithLoader";
 
 interface ExposedDetailProps {
   item: PortfolioItem;
@@ -57,31 +58,20 @@ const ExposedDetail = ({ item }: ExposedDetailProps) => {
       {/* Featured Images */}
 
       <div className="mt-20 max-w-5xl mx-auto px-6">
-        <img
+        <ImageWithLoader
           src="/content/exposed/gallery-2.jpg"
           alt="Nate riding a bike through the Tetons"
           className="w-full rounded-lg"
+          caption="The autumn colors were in full effect, painting the landscape with vibrant hues of red, orange, and yellow. A dusting of snow covered the ground, creating even more contrast to the kaleidoscope of colors. 📸 Alex Pashley"
         />
-        <p className="text-gray-300 text-md mt-3 px-4 text-left">
-          The autumn colors were in full effect, painting the landscape with
-          vibrant hues of red, orange, and yellow. A dusting of snow covered the
-          ground, creating even more contrast to the kaleidoscope of colors. 📸
-          Alex Pashley
-        </p>
       </div>
       <div className="mt-20 max-w-5xl mx-auto px-6">
-        <img
+        <ImageWithLoader
           src="/content/exposed/gallery-3.jpg"
           alt="Fallen leaves on the ground"
           className="w-full rounded-lg"
+          caption="The changing of seasons always brings a sense of reflection and rebirth. Change is inevitable — everything is continuously in motion, and I sometimes need to remind myself to stop and appreciate that moment, because that moment it will never happen again. 📸 Alex Pashley"
         />
-        <p className="text-gray-300 text-md mt-3 px-4 text-left">
-          The changing of seasons always brings a sense of reflection and
-          rebirth. Change is inevitable — everything is continuously in motion,
-          and I sometimes need to remind myself to stop and appreciate that
-          moment, because that moment it will never happen again. 📸 Alex
-          Pashley
-        </p>
       </div>
       <div className="max-w-2xl mx-auto px-6 mt-16">
         <div className="text-gray-50 leading-relaxed font-normal text-md md:text-lg">
@@ -107,28 +97,20 @@ const ExposedDetail = ({ item }: ExposedDetailProps) => {
         </div>
       </div>
       <div className="mt-16 max-w-5xl mx-auto px-6">
-        <img
+        <ImageWithLoader
           src="/content/exposed/gallery-1.jpg"
           alt="Nate topping out on a big hike-a-bike"
           className="w-full rounded-lg"
+          caption="You can't call it a backcountry ride without a little hike-a-bike! Looking back, this photo represents such a special time and place, with an amazing human-being. This will be a day I always will remember. 📸 Alex Pashley"
         />
-        <p className="text-gray-300 text-md mt-3 px-4 text-left">
-          You can't call it a backcountry ride without a little hike-a-bike!
-          Looking back, this photo represents such a special time and place,
-          with an amazing human-being. This will be a day I always will
-          remember. 📸 Alex Pashley
-        </p>
       </div>
       <div className="mt-16 max-w-5xl mx-auto px-6">
-        <img
+        <ImageWithLoader
           src="/content/exposed/gallery-4.jpg"
           alt="Nate looking out at the mountainscape"
           className="w-full rounded-lg"
+          caption="The more time you spend out in the mountains, you begin to realize how small you really are. 📸 Alex Pashley"
         />
-        <p className="text-gray-300 text-md mt-3 px-4 text-left">
-          The more time you spend out in the mountains, you begin to realize how
-          small you really are. 📸 Alex Pashley
-        </p>
       </div>
       <div className="max-w-2xl mx-auto px-6 mt-16 mb-40">
         <div className="text-gray-50 leading-relaxed font-normal text-md md:text-lg">

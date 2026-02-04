@@ -1,6 +1,7 @@
 "use client";
 
 import { PortfolioItem } from "../../../types/portfolio";
+import { ImageWithLoader } from "../../ImageWithLoader";
 
 interface TheCarribooJackDetailProps {
   item: PortfolioItem;
@@ -26,27 +27,20 @@ const TheCarribooJackDetail = ({ item }: TheCarribooJackDetailProps) => {
         </h3>
       </div>
       <div className="mt-16 max-w-5xl mx-auto px-6">
-        <img
+        <ImageWithLoader
           src="/content/the-carriboo-jack/carriboo-jack_01.jpg"
           alt="Party in the woods"
           className="w-full rounded-lg"
+          caption="This quiet moment might be my favorite photo from all the years of the event—a true party in the woods. 📸 Alex Pashley"
         />
-        <p className="text-gray-300 text-md mt-3 px-4 text-left">
-          This might be my favorite photo from all the years of the event—a true
-          party in the woods. 📸 Alex Pashley
-        </p>
       </div>
       <div className="mt-16 max-w-5xl mx-auto px-6">
-        <img
+        <ImageWithLoader
           src="/content/the-carriboo-jack/carriboo-jack_02.jpg"
           alt="Nick is stoked"
           className="w-full rounded-lg"
+          caption="Nick, stoked on the ride and rocking a Smartwool x Cariboo Jack jersey, soaking in the trails and the energy of the event. 📸 Alex Pashley"
         />
-        <p className="text-gray-300 text-md mt-3 px-4 text-left">
-          Nick, stoked on the ride and rocking a Smartwool x Cariboo Jack
-          jersey, soaking in the trails and the energy of the event. 📸 Alex
-          Pashley
-        </p>
       </div>
       {/* Project Overview */}
       <div className="max-w-2xl mx-auto px-6 my-24">
@@ -77,27 +71,20 @@ const TheCarribooJackDetail = ({ item }: TheCarribooJackDetailProps) => {
         </div>
       </div>
       <div className="mt-16 max-w-5xl mx-auto px-6">
-        <img
+        <ImageWithLoader
           src="/content/the-carriboo-jack/carriboo-jack_03.jpg"
           alt="Rider high in the alpine"
           className="w-full rounded-lg"
+          caption="A rider high in the alpine. There's something magical about this zone—hard to explain, but deeply felt. 📸 Cort Muller"
         />
-        <p className="text-gray-300 text-md mt-3 px-4 text-left">
-          A rider high in the alpine. There’s something magical about this
-          zone—hard to explain, but deeply felt. 📸 Cort Muller
-        </p>
       </div>
       <div className="mt-16 max-w-5xl mx-auto px-6">
-        <img
+        <ImageWithLoader
           src="/content/the-carriboo-jack/carriboo-jack_04.jpg"
           alt="Evan slinging pies"
           className="w-full rounded-lg"
+          caption="Pizza master Grottylocks slinging pies to a group of hungry riders—much-needed fuel after a long day in the mountains. 📸 Cort Muller"
         />
-        <p className="text-gray-300 text-md mt-3 px-4 text-left">
-          Pizza master Grottylocks slinging pies to a group of hungry
-          riders—much-needed fuel after a long day in the mountains. 📸 Cort
-          Muller
-        </p>
       </div>
       {/* My Role */}
       <div className="max-w-2xl mx-auto px-6 my-24">
@@ -113,27 +100,20 @@ const TheCarribooJackDetail = ({ item }: TheCarribooJackDetailProps) => {
         </div>
       </div>
       <div className="mt-16 max-w-5xl mx-auto px-6">
-        <img
+        <ImageWithLoader
           src="/content/the-carriboo-jack/carriboo-jack_05.jpg"
           alt="Big Jerm and Bill embody the Carriboo Jack spirit"
           className="w-full rounded-lg"
+          caption="Big Jerm being serenaded by Cariboo Jack—a moment that perfectly captures the spirit of the event. Equal parts grit, humor, and community. 📸 Ben Gavelda"
         />
-        <p className="text-gray-300 text-md mt-3 px-4 text-left">
-          Big Jerm being serenaded by Cariboo Jack—a moment that perfectly
-          captures the spirit of the event. Equal parts grit, humor, and
-          community. 📸 Ben Gavelda
-        </p>
       </div>
       <div className="mt-16 max-w-5xl mx-auto px-6">
-        <img
+        <ImageWithLoader
           src="/content/the-carriboo-jack/carriboo-jack_06.jpg"
           alt="Carriboo Jack beer"
           className="w-full rounded-lg"
+          caption="10 Barrel Brewing crafted a light Cariboo Jack beer—always welcome after a hard day in the mountains. 📸 Cort Muller"
         />
-        <p className="text-gray-300 text-md mt-3 px-4 text-left">
-          10 Barrel Brewing crafted a light Cariboo Jack beer—always welcome
-          after a hard day in the mountains. 📸 Cort Muller
-        </p>
       </div>
       {/* Design Insight */}
       <div className="max-w-2xl mx-auto px-6 my-24">
@@ -147,27 +127,20 @@ const TheCarribooJackDetail = ({ item }: TheCarribooJackDetailProps) => {
         </div>
       </div>
       <div className="mt-16 max-w-5xl mx-auto px-6">
-        <img
+        <ImageWithLoader
           src="/content/the-carriboo-jack/carriboo-jack_07.jpg"
           alt="Trailwork tool stash"
           className="w-full rounded-lg"
+          caption="The USFS packed tools in by horse a few days before our dig days, making it possible to work deep in the backcountry without motorized access. 📸 Ben Gavelda"
         />
-        <p className="text-gray-300 text-md mt-3 px-4 text-left">
-          The USFS packed tools in by horse a few days before our dig days,
-          making it possible to work deep in the backcountry without motorized
-          access. 📸 Ben Gavelda
-        </p>
       </div>
       <div className="mt-16 max-w-5xl mx-auto px-6">
-        <img
+        <ImageWithLoader
           src="/content/the-carriboo-jack/carriboo-jack_08.jpg"
           alt="Trophy skull"
           className="w-full rounded-lg"
+          caption="The trophy skull tradition began with Mitch Prissel in 2018 and quickly became part of the Cariboo Jack lore. 📸 Cort Muller"
         />
-        <p className="text-gray-300 text-md mt-3 px-4 text-left">
-          The trophy skull tradition began with Mitch Prissel in 2018 and
-          quickly became part of the Cariboo Jack lore. 📸 Cort Muller
-        </p>
       </div>
       {/* Closing */}
       <div className="max-w-2xl mx-auto px-6 mt-24 mb-40">

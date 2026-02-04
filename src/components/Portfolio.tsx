@@ -8,6 +8,9 @@ import {
   loadCustomDetailComponent,
   DetailContentComponent,
 } from "./custom-detail-views/contentRegistry";
+import { VideoWithLoader } from "./VideoWithLoader";
+import { ImageWithLoader } from "./ImageWithLoader";
+import { ThumbnailWithLoader } from "./ThumbnailWithLoader";
 
 export const Portfolio = () => {
   const [showUI, setShowUI] = useState(true);
@@ -385,16 +388,12 @@ export const Portfolio = () => {
               }}
             >
               {sharedMedia.item.thumbnailUrl?.endsWith(".mp4") ? (
-                <video
+                <VideoWithLoader
                   src={sharedMedia.item.thumbnailUrl}
-                  autoPlay
-                  loop
-                  muted
-                  playsInline
                   className="w-full h-full object-cover"
                 />
               ) : (
-                <img
+                <ThumbnailWithLoader
                   src={sharedMedia.item.thumbnailUrl}
                   alt={sharedMedia.item.title}
                   className="w-full h-full object-cover"
@@ -647,16 +646,12 @@ export const Portfolio = () => {
                           style={{ width: "336px", height: "209px" }}
                         >
                           {item.thumbnailUrl?.endsWith(".mp4") ? (
-                            <video
+                            <VideoWithLoader
                               src={item.thumbnailUrl}
-                              autoPlay
-                              loop
-                              muted
-                              playsInline
                               className="w-full h-full object-cover"
                             />
                           ) : (
-                            <img
+                            <ThumbnailWithLoader
                               src={item.thumbnailUrl}
                               alt={item.title}
                               className="w-full h-full object-cover"
