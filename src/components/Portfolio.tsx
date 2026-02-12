@@ -557,16 +557,7 @@ export const Portfolio = () => {
               {/* About Content */}
               <div className="mb-8">
                 <p className="text-3xl md:text-4xl text-gray-800 font-black uppercase leading-tight tracking-tight">
-                  I'm a{" "}
-                  <a
-                    href="https://www.linkedin.com/in/natekirschner/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="underline hover:text-red-400"
-                  >
-                    multi-disciplinary designer
-                  </a>{" "}
-                  guided by curiosity.
+                  I capture ideas & shape them into intentional experiences.
                 </p>
               </div>
               <div className="mb-12">
@@ -603,11 +594,13 @@ export const Portfolio = () => {
                           {item.title}
                         </h2>
                         {/* Row 2: Project Type • Description */}
-                        <div className="flex items-center text-gray-600">
+                        <div className="flex flex-col sm:flex-row sm:items-center text-gray-600 gap-1 sm:gap-0">
                           <span className="text-md font-medium">
                             {item.metadata?.projectType || item.tag}
                           </span>
-                          <span className="mx-2 text-gray-400">•</span>
+                          <span className="mx-2 text-gray-400 hidden sm:inline">
+                            •
+                          </span>
                           <span className="text-md">
                             {item.shortDescription}
                           </span>
