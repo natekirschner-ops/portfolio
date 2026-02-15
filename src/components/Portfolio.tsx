@@ -484,7 +484,7 @@ export const Portfolio = () => {
                     }`}
                   >
                     <h1 className="text-4xl md:text-7xl lg:text-8xl font-extrabold uppercase text-white leading-none text-shadow-2xs">
-                      Designed <br></br>with curiosity
+                      Experience <br></br>the design
                     </h1>
                   </div>
                 </div>
@@ -551,13 +551,20 @@ export const Portfolio = () => {
                 </div>
               </div>
             </section>
-
+            <section className="max-w-3xl mx-16 px-6 pt-24 pb-6">
+              <div className="">
+                <p className="text-3xl md:text-5xl text-gray-800 font-black uppercase leading-tight tracking-tight">
+                  I capture ideas and shape them into intentional experiences.
+                </p>
+              </div>
+            </section>
             {/* Combined About & Selected Works Section */}
-            <section className="max-w-2xl mx-auto px-6 pt-24 pb-6">
+            <section className="max-w-lg mx-auto px-6 pt-24 pb-6">
               {/* About Content */}
               <div className="mb-8">
-                <p className="text-3xl md:text-4xl text-gray-800 font-black uppercase leading-tight tracking-tight">
-                  I capture ideas & shape them into intentional experiences.
+                <p className="text-xl md:text-3xl text-gray-800 font-bold font-playfair italic ">
+                  Designing digital products that connect brand, system, and
+                  user experience.
                 </p>
               </div>
               <div className="mb-12">
@@ -576,7 +583,8 @@ export const Portfolio = () => {
                   </p>
                 </div>
               </div>
-
+            </section>
+            <section className="max-w-2xl mx-auto px-6 pt-24 pb-6">
               {/* All Projects - List Layout */}
               <div className="space-y-12 group/list">
                 {orderedItems.map((item, index) => (
@@ -659,7 +667,7 @@ export const Portfolio = () => {
             </section>
 
             {/* Linking Section */}
-            <section className="max-w-2xl mx-auto px-6">
+            <section className="max-w-lg mx-auto px-6 pt-24">
               <div className="space-y-8">
                 <p className="text-lg text-gray-600 leading-relaxed">
                   This work is part of an ongoing creative practice—one guided
@@ -678,9 +686,8 @@ export const Portfolio = () => {
                 </p>
                 <p className="text-lg text-gray-600 leading-relaxed">
                   I’m drawn to projects that value depth, experimentation, and
-                  intention, and I’m most energized when ideas are allowed to
-                  evolve over time. If something here resonates, I’m always open
-                  to thoughtful{" "}
+                  intention. If something here resonates, I’m always open to
+                  thoughtful{" "}
                   <a
                     className="underline hover:text-red-400"
                     href="mailto:contact@nathankirschner.com"
@@ -698,7 +705,7 @@ export const Portfolio = () => {
             <section className="h-screen flex items-center justify-center">
               <div className="max-w-xl mx-auto px-6 text-center">
                 <div className="space-y-6">
-                  <p className="text-xl md:text-3xl text-gray-700 font-playfair italic font-semibold leading-normal">
+                  <p className="text-xl md:text-3xl text-gray-700 font-playfair italic font-bold leading-normal">
                     "Care about people's approval, and you will be their
                     prisoner."
                   </p>

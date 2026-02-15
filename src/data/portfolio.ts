@@ -27,7 +27,7 @@ export const portfolioItems: PortfolioItem[] = [
       date: "2024",
       technologies: ["Videography", "AI"],
       status: "completed",
-      projectType: "Motion",
+      projectType: "AI + Motion",
     },
   },
   {
@@ -54,7 +54,7 @@ export const portfolioItems: PortfolioItem[] = [
     title: "Seismic",
     description:
       "Rethinking Seismic’s proprietary software meant stepping back before moving forward. The goal wasn’t just to redesign screens, but to bring clarity, cohesion, and long-term structure to a complex internal platform.",
-    shortDescription: "Redesigning an agency platform",
+    shortDescription: "Redesigning an enterprise platform",
     tag: "digital",
     thumbnailUrl: "/content/seismic/thumbnail.jpg",
     position: {
@@ -65,7 +65,7 @@ export const portfolioItems: PortfolioItem[] = [
       date: "2024",
       technologies: ["UX", "Design"],
       status: "completed",
-      projectType: "Design system",
+      projectType: "Product",
     },
   },
   {
@@ -90,7 +90,7 @@ export const portfolioItems: PortfolioItem[] = [
         "UX",
       ],
       status: "completed",
-      projectType: "Event production",
+      projectType: "Event Management",
     },
   },
 
@@ -99,7 +99,7 @@ export const portfolioItems: PortfolioItem[] = [
     title: "Ideation",
     description:
       "Traditional LLM interfaces treat conversations as a single, disposable thread. Once an idea passes, it's buried—lost to scrolling. Ideation allows you to connect insights across conversations, view ideas from unique perspectives, and discover patterns you might never see in a linear thread.",
-    shortDescription: "Expanding the way we think with AI",
+    shortDescription: "Exploring the LLM experience.",
     tag: "digital",
     thumbnailUrl: "/content/ideation/thumbnail.mp4",
     position: {
@@ -119,7 +119,7 @@ export const portfolioItems: PortfolioItem[] = [
         "Human-Computer Interaction",
       ],
       status: "completed",
-      projectType: "Web app",
+      projectType: "Product",
     },
   },
 

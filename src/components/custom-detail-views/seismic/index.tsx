@@ -21,7 +21,7 @@ const SeismicDetail = ({ item }: SeismicDetailProps) => {
         <h3 className="text-2xl md:text-4xl font-black text-white mb-6 ">
           {item.shortDescription}
         </h3>
-        <h3 className="text-xl md:text-2xl font-semibold font-playfair italic text-white mb-12">
+        <h3 className="text-xl md:text-2xl font-bold font-playfair italic text-white mb-12">
           {item.description}
         </h3>
       </div>
@@ -30,7 +30,7 @@ const SeismicDetail = ({ item }: SeismicDetailProps) => {
         <h3 className="text-3xl font-bold text-white mb-6">Overview</h3>
         <div className="text-gray-50 leading-relaxed font-normal text-md md:text-lg">
           <p>
-            Seismic delivers performance-driven influencer marketing campaigns
+            Seismic delivers performance-driven influencer advertising campaigns
             by combining institutional knowledge, data science, and proprietary
             technology. At the center of this ecosystem is Seismo—Seismic’s
             internal software platform used to plan, manage, and evaluate
@@ -66,8 +66,8 @@ const SeismicDetail = ({ item }: SeismicDetailProps) => {
         <h3 className="text-3xl font-bold text-white mb-6">My role</h3>
         <div className="text-gray-50 leading-relaxed font-normal text-md md:text-lg">
           <p>
-            I worked closely with the Product Manager, VP of Engineering, and
-            engineering team to introduce a more intentional design process,
+            I worked closely with the Product Manager, engineering team, and
+            leadership to introduce a more intentional design process,
             establishing clear phases for discovery, design, review, and
             handoff. Alongside this, I led the creation of a scalable design
             system—defining components, patterns, and conventions that aligned

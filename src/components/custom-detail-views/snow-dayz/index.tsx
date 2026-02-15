@@ -21,7 +21,7 @@ const SnowDayzDetail = ({ item }: SnowDayzDetailProps) => {
         <h3 className="text-2xl md:text-4xl font-black text-white mb-6 ">
           {item.shortDescription}
         </h3>
-        <h3 className="text-xl md:text-2xl font-semibold font-playfair italic text-white mb-12">
+        <h3 className="text-xl md:text-2xl font-bold font-playfair italic text-white mb-12">
           {item.description}
         </h3>
       </div>
