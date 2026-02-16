@@ -37,10 +37,9 @@ export const Portfolio = () => {
   // Define project order and get items
   const projectOrder = [
     "ideation",
-    "the-carriboo-jack",
     "seismic",
+    "the-carriboo-jack",
     "exposed",
-
     "snow-dayz",
   ];
 
@@ -703,9 +702,9 @@ export const Portfolio = () => {
 
             {/* Footer Section */}
             <section className="h-screen flex items-center justify-center">
-              <div className="max-w-xl mx-auto px-6 text-center">
+              <div className="max-w-2xl mx-auto px-6 text-center">
                 <div className="space-y-6">
-                  <p className="text-xl md:text-3xl text-gray-700 font-playfair italic font-bold leading-normal">
+                  <p className="text-3xl md:text-4xl text-gray-700 font-playfair italic font-bold leading-normal">
                     "Care about people's approval, and you will be their
                     prisoner."
                   </p>
