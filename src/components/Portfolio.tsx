@@ -558,14 +558,9 @@ export const Portfolio = () => {
               </div>
             </section>
             {/* Combined About & Selected Works Section */}
-            <section className="max-w-lg mx-auto px-6 pt-24 pb-6">
+            <section className="max-w-lg sm:mx-auto mx-16 px-6 pt-24 pb-6">
               {/* About Content */}
-              <div className="mb-8">
-                <p className="text-xl md:text-3xl text-gray-800 font-bold font-playfair italic ">
-                  Designing digital products that connect brand, system, and
-                  user experience.
-                </p>
-              </div>
+
               <div className="mb-12">
                 <div className="space-y-6">
                   <p className="text-md md:text-lg text-gray-600 font-normal leading-relaxed">
@@ -666,7 +661,7 @@ export const Portfolio = () => {
             </section>
 
             {/* Linking Section */}
-            <section className="max-w-lg mx-auto px-6 pt-24">
+            <section className="max-w-lg sm:mx-auto mx-16 px-6 pt-24">
               <div className="space-y-8">
                 <p className="text-lg text-gray-600 leading-relaxed">
                   This work is part of an ongoing creative practice—one guided
