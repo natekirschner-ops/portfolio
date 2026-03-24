@@ -35,6 +35,13 @@ const ViagenDetail = ({ item }: ViagenDetailProps) => {
           className="w-full rounded-2xl"
         />
       </div>
+      <div className="mt-20 max-w-4xl mx-auto px-6">
+        <img
+          src="/content/viagen/viagen_02.jpg"
+          alt="Viagen workspace"
+          className="w-full rounded-2xl"
+        />
+      </div>
       {/* Closing */}
       <div className="max-w-2xl mt-20 mx-auto px-6 mb-40">
         <div className="text-gray-50 leading-relaxed font-normal text-md md:text-lg">

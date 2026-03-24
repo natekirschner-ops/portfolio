@@ -6,10 +6,10 @@ export const portfolioItems: PortfolioItem[] = [
     title: "Viagen Platform",
     description:
       "A platform that empowers teams to move ideas towards production at the speed of thought. Viagen combines task management, AI automation and sane access control —it’s collaborative, safe, and fast.",
-    shortDescription: "Product Design",
+    shortDescription: "AI-Native Product Design",
     thumbnailUrl: "/content/viagen/thumbnail.jpg",
     metadata: {
-      projectType: "Product Design",
+      projectType: "AI-Native Product Design",
       client: "Compute & Token",
     },
   },
