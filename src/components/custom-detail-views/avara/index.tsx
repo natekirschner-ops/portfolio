@@ -1,9 +1,7 @@
 "use client";
 
 import { PortfolioItem } from "../../../types/portfolio";
-import { ImageWithLoader } from "../../ImageWithLoader";
-
-interface AvaraProps {
+interface AvaraDetailProps {
   item: PortfolioItem;
 }
 
@@ -12,7 +10,7 @@ const AvaraDetail = ({ item }: AvaraDetailProps) => {
     <div className="bg-black py-20 relative">
       {/* Banner Video */}
       <div className="max-w-4xl mx-auto mb-20">
-        <ImageWithLoader
+        <img
           src="/content/avara/thumbnail.jpg"
           alt="Avara Medical logo"
           className="w-full rounded-2xl"
@@ -31,7 +29,7 @@ const AvaraDetail = ({ item }: AvaraDetailProps) => {
 
       {/* Featured Images */}
       <div className="mt-20 max-w-4xl mx-auto px-6">
-        <ImageWithLoader
+        <img
           src="/content/avara/avara_01.jpg"
           alt="Avara Medical logomark and workmark"
           className="w-full rounded-2xl"
