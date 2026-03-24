@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { portfolioItems } from "../data/portfolio";
 import { PortfolioItem } from "../types/portfolio";
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 
 const detailPageSlugs = new Set([
   "seismic",
@@ -85,6 +85,19 @@ const allItems = portfolioItems;
 
 export const Portfolio = () => {
   const [showUI, setShowUI] = useState(true);
+
+  // Restore scroll position when returning from a detail page
+  useEffect(() => {
+    const savedY = sessionStorage.getItem("portfolioScrollY");
+    if (savedY) {
+      window.scrollTo(0, parseInt(savedY, 10));
+      sessionStorage.removeItem("portfolioScrollY");
+    }
+  }, []);
+
+  const saveScrollPosition = () => {
+    sessionStorage.setItem("portfolioScrollY", String(window.scrollY));
+  };
 
   return (
     <>
@@ -254,7 +267,7 @@ export const Portfolio = () => {
                 className="transition-opacity duration-300 group-hover/grid:opacity-50 hover:!opacity-100"
               >
                 {detailPageSlugs.has(item.id) ? (
-                  <Link href={`/work/${item.id}`}>
+                  <Link href={`/work/${item.id}`} onClick={saveScrollPosition}>
                     <GridItem item={item} />
                   </Link>
                 ) : (
