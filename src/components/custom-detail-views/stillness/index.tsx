@@ -1,20 +1,27 @@
 "use client";
 
 import { PortfolioItem } from "../../../types/portfolio";
-interface AvaraDetailProps {
+
+interface StillnessDetailProps {
   item: PortfolioItem;
 }
 
-const AvaraDetail = ({ item }: AvaraDetailProps) => {
+const StillnessDetail = ({ item }: StillnessDetailProps) => {
   return (
     <div className="bg-black py-20 relative">
       {/* Banner Video */}
       <div className="max-w-4xl mx-auto mb-20 px-6">
-        <img
-          src="/content/avara/thumbnail.jpg"
-          alt="Avara Medical logo"
-          className="w-full rounded-2xl"
-        />
+        <div
+          className="relative w-full rounded-2xl overflow-hidden"
+          style={{ paddingBottom: "56.25%" }}
+        >
+          <iframe
+            src="https://www.youtube.com/embed/yMpeLoySbR0?loop=1&playlist=yMpeLoySbR0&modestbranding=1&rel=0"
+            allow="autoplay; encrypted-media"
+            allowFullScreen
+            className="absolute top-0 left-0 w-full h-full"
+          />
+        </div>
       </div>
 
       {/* Project Description */}
@@ -27,26 +34,17 @@ const AvaraDetail = ({ item }: AvaraDetailProps) => {
         </h3>
       </div>
 
-      {/* Featured Images */}
-      <div className="mt-20 max-w-4xl mx-auto px-6">
-        <img
-          src="/content/avara/avara_01.jpg"
-          alt="Avara Medical logomark and workmark"
-          className="w-full rounded-2xl"
-        />
-      </div>
-
       {/* Closing */}
-      <div className="max-w-2xl mt-20 mx-auto px-6 mb-40">
+      <div className="max-w-2xl mx-auto px-6 mb-40">
         <div className="text-gray-50 leading-relaxed font-normal text-md md:text-lg">
           <div className="flex justify-center mt-8">
             <a
-              href="https://avaramedical.com/"
+              href="https://www.youtube.com/watch?v=yMpeLoySbR0"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-white hover:bg-gray-100 text-black font-semibold px-6 py-3 rounded-full shadow-lg transition-all duration-300 hover:scale-105 cursor-pointer"
             >
-              <span>Visit website</span>
+              <span>View on YouTube</span>
               <svg
                 width="20"
                 height="20"
@@ -71,4 +69,4 @@ const AvaraDetail = ({ item }: AvaraDetailProps) => {
   );
 };
 
-export default AvaraDetail;
+export default StillnessDetail;

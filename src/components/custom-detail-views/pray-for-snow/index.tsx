@@ -2,19 +2,22 @@
 
 import { PortfolioItem } from "../../../types/portfolio";
 
-interface BeersOnTrailsDetailProps {
+interface PrayForSnowDetailProps {
   item: PortfolioItem;
 }
 
-const BeersOnTrailsDetail = ({ item }: BeersOnTrailsDetailProps) => {
+const PrayForSnowDetail = ({ item }: PrayForSnowDetailProps) => {
   return (
     <div className="bg-black py-20 relative">
       {/* Banner Video */}
       <div className="max-w-4xl mx-auto mb-20 px-6">
-        <img
-          src="/content/beers-on-trails/thumbnail.jpg"
-          alt="Fallen leaves on the ground"
-          className="w-full rounded-2xl"
+        <video
+          src="/content/pray-for-snow/thumbnail.mp4"
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="w-full object-cover rounded-2xl"
         />
       </div>
 
@@ -27,17 +30,8 @@ const BeersOnTrailsDetail = ({ item }: BeersOnTrailsDetailProps) => {
           {item.description}
         </h3>
       </div>
-
-      {/* Featured Images */}
-      <div className="mt-20 max-w-4xl mx-auto px-6">
-        <img
-          src="/content/beers-on-trails/beers-on-trails_01.jpg"
-          alt="Beers on Trail mobile preview"
-          className="w-full rounded-2xl"
-        />
-      </div>
     </div>
   );
 };
 
-export default BeersOnTrailsDetail;
+export default PrayForSnowDetail;

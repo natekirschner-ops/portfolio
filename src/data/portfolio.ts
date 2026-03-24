@@ -94,6 +94,52 @@ export const portfolioItems: PortfolioItem[] = [
       client: "10 Barrel Brewing",
     },
   },
+  {
+    id: "teton-gravity-research",
+    title: "Ski Big Three",
+    description:
+      "Collaborting with Teton Gravity Reserach to create a campaign micro-site for Ski Big Three.",
+    shortDescription: "Ski Big Three Campaign",
+    thumbnailUrl: "/content/teton-gravity-research/thumbnail.jpg",
+    metadata: {
+      projectType: "Website Design",
+      client: "Teton Gravity Research + Ski Big Three",
+    },
+  },
+  {
+    id: "pray-for-snow",
+    title: "Pray for Snow",
+    description: "A movie title intro created in After Effects.",
+    shortDescription: "After Effects + Videography",
+    thumbnailUrl: "/content/pray-for-snow/thumbnail.mp4",
+    metadata: {
+      projectType: "Motion",
+      client: "10 Barrel Brewing",
+    },
+  },
+  {
+    id: "prospect",
+    title: "Prospect Studio",
+    description:
+      "Collaborating with Inlinght Media to design and create a new website for Prospect Studio.",
+    shortDescription: "Website Design",
+    thumbnailUrl: "/content/prospect/thumbnail.jpg",
+    metadata: {
+      projectType: "Website Design",
+      client: "Inlight Media + Prospect Studio",
+    },
+  },
+  {
+    id: "stillness",
+    title: "Creative Stillness",
+    description:
+      "An experiment in introducing Runway AI into a motion workflow.",
+    shortDescription: "AI + Motion",
+    thumbnailUrl: "/content/stillness/thumbnail.mp4",
+    metadata: {
+      projectType: "AI + Motion",
+    },
+  },
 ];
 
 export const getItemById = (id: string) => {

@@ -10,7 +10,7 @@ const SnowDayzDetail = ({ item }: SnowDayzDetailProps) => {
   return (
     <div className="bg-black py-20 relative">
       {/* Banner Video */}
-      <div className="max-w-4xl mx-auto mb-20">
+      <div className="max-w-4xl mx-auto mb-20 px-6">
         <video
           src="/content/storm-dayz/banner.mp4"
           autoPlay

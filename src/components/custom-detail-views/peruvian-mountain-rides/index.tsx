@@ -12,7 +12,7 @@ const PeruvianMoutainRidesDetail = ({
   return (
     <div className="bg-black py-20 relative">
       {/* Banner */}
-      <div className="max-w-4xl mx-auto mb-20">
+      <div className="max-w-4xl mx-auto mb-20 px-6">
         <img
           src="/content/peruvian-mountain-rides/thumbnail.jpg"
           alt="Peruvian Mountain Rides homepage"

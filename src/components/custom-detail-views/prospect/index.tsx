@@ -1,18 +1,18 @@
 "use client";
 
 import { PortfolioItem } from "../../../types/portfolio";
-interface AvaraDetailProps {
+interface ProspectProps {
   item: PortfolioItem;
 }
 
-const AvaraDetail = ({ item }: AvaraDetailProps) => {
+const ProspectDetail = ({ item }: ProspectDetailProps) => {
   return (
     <div className="bg-black py-20 relative">
       {/* Banner Video */}
       <div className="max-w-4xl mx-auto mb-20 px-6">
         <img
-          src="/content/avara/thumbnail.jpg"
-          alt="Avara Medical logo"
+          src="/content/prospect/thumbnail.jpg"
+          alt="Prospect Studio home page"
           className="w-full rounded-2xl"
         />
       </div>
@@ -30,18 +30,24 @@ const AvaraDetail = ({ item }: AvaraDetailProps) => {
       {/* Featured Images */}
       <div className="mt-20 max-w-4xl mx-auto px-6">
         <img
-          src="/content/avara/avara_01.jpg"
-          alt="Avara Medical logomark and workmark"
+          src="/content/prospect/prospect_01.jpg"
+          alt="Prospect Studio projects page"
           className="w-full rounded-2xl"
         />
       </div>
-
+      <div className="mt-20 max-w-4xl mx-auto px-6">
+        <img
+          src="/content/prospect/prospect_02.jpg"
+          alt="Prospect Studio detail project page"
+          className="w-full rounded-2xl"
+        />
+      </div>
       {/* Closing */}
       <div className="max-w-2xl mt-20 mx-auto px-6 mb-40">
         <div className="text-gray-50 leading-relaxed font-normal text-md md:text-lg">
           <div className="flex justify-center mt-8">
             <a
-              href="https://avaramedical.com/"
+              href="https://www.prospectjh.com/"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-white hover:bg-gray-100 text-black font-semibold px-6 py-3 rounded-full shadow-lg transition-all duration-300 hover:scale-105 cursor-pointer"
@@ -71,4 +77,4 @@ const AvaraDetail = ({ item }: AvaraDetailProps) => {
   );
 };
 
-export default AvaraDetail;
+export default ProspectDetail;

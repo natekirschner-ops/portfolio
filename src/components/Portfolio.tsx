@@ -14,6 +14,10 @@ const detailPageSlugs = new Set([
   "viagen",
   "peruvian-mountain-rides",
   "avara",
+  "pray-for-snow",
+  "teton-gravity-research",
+  "prospect",
+  "stillness",
 ]);
 
 interface GridItemProps {

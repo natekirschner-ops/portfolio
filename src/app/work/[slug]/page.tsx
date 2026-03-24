@@ -11,6 +11,10 @@ import BeersOnTrailsDetail from "../../../components/custom-detail-views/beers-o
 import ViagenDetail from "../../../components/custom-detail-views/viagen";
 import PeruvianMountainRidesDetail from "../../../components/custom-detail-views/peruvian-mountain-rides";
 import AvaraDetail from "../../../components/custom-detail-views/avara";
+import PrayForSnowDetail from "../../../components/custom-detail-views/pray-for-snow";
+import TetonGravityResearchDetail from "../../../components/custom-detail-views/teton-gravity-research";
+import ProspectDetail from "@/components/custom-detail-views/prospect";
+import StillnessDetail from "@/components/custom-detail-views/stillness";
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -56,6 +60,14 @@ export default async function WorkPage({ params }: PageProps) {
         return <PeruvianMountainRidesDetail item={item} />;
       case "avara":
         return <AvaraDetail item={item} />;
+      case "pray-for-snow":
+        return <PrayForSnowDetail item={item} />;
+      case "teton-gravity-research":
+        return <TetonGravityResearchDetail item={item} />;
+      case "prospect":
+        return <ProspectDetail item={item} />;
+      case "stillness":
+        return <StillnessDetail item={item} />;
       default:
         return notFound();
     }

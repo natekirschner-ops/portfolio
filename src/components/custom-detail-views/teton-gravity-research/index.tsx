@@ -1,19 +1,20 @@
 "use client";
 
 import { PortfolioItem } from "../../../types/portfolio";
-
-interface BeersOnTrailsDetailProps {
+interface TetonGravityResearchDetailProps {
   item: PortfolioItem;
 }
 
-const BeersOnTrailsDetail = ({ item }: BeersOnTrailsDetailProps) => {
+const TetonGravityResearchDetail = ({
+  item,
+}: TetonGravityResearchDetailProps) => {
   return (
     <div className="bg-black py-20 relative">
       {/* Banner Video */}
       <div className="max-w-4xl mx-auto mb-20 px-6">
         <img
-          src="/content/beers-on-trails/thumbnail.jpg"
-          alt="Fallen leaves on the ground"
+          src="/content/teton-gravity-research/thumbnail.jpg"
+          alt="Ski Big Three campaign"
           className="w-full rounded-2xl"
         />
       </div>
@@ -31,8 +32,8 @@ const BeersOnTrailsDetail = ({ item }: BeersOnTrailsDetailProps) => {
       {/* Featured Images */}
       <div className="mt-20 max-w-4xl mx-auto px-6">
         <img
-          src="/content/beers-on-trails/beers-on-trails_01.jpg"
-          alt="Beers on Trail mobile preview"
+          src="/content/teton-gravity-research/tgr_01.jpg"
+          alt="Ski Big Three campaign"
           className="w-full rounded-2xl"
         />
       </div>
@@ -40,4 +41,4 @@ const BeersOnTrailsDetail = ({ item }: BeersOnTrailsDetailProps) => {
   );
 };
 
-export default BeersOnTrailsDetail;
+export default TetonGravityResearchDetail;
