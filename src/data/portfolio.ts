@@ -16,8 +16,7 @@ export const portfolioItems: PortfolioItem[] = [
   {
     id: "avara",
     title: "Avara",
-    description:
-      "Sometimes the most powerful stories emerge from unplanned moments. What began as a casual trail-scouting mission in the Teton region transformed into a ten-hour epic—one that would eventually capture the attention of Outside Magazine and showcase the raw beauty of backcountry exploration.",
+    description: "Avara Medical is a functional medicine clinic in Provo, UT",
     shortDescription: "Brand identity",
     thumbnailUrl: "/content/avara/thumbnail.jpg",
     metadata: {
