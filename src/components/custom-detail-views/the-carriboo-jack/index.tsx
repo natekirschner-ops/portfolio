@@ -8,24 +8,30 @@ interface TheCarribooJackDetailProps {
 }
 
 const TheCarribooJackDetail = ({ item }: TheCarribooJackDetailProps) => {
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  };
-
   return (
-    <div className="bg-black py-20 z-200 relative">
+    <div className="bg-black py-20 relative">
+      {/* Banner Video */}
+      <div className="max-w-4xl mx-auto mb-20">
+        <video
+          src="/content/the-carriboo-jack/thumbnail.mp4"
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="w-full object-cover rounded-2xl"
+        />
+      </div>
+
       {/* Project Description */}
       <div className="max-w-2xl mx-auto px-6 mb-24">
-        <h3 className="text-2xl md:text-4xl font-black text-white mb-6 ">
+        <h3 className="text-2xl md:text-4xl font-black text-white mb-6">
           {item.shortDescription}
         </h3>
         <h3 className="text-xl md:text-2xl font-bold font-playfair italic text-white mb-12">
           {item.description}
         </h3>
       </div>
+
       <div className="mt-16 max-w-5xl mx-auto px-6">
         <ImageWithLoader
           src="/content/the-carriboo-jack/carriboo-jack_01.jpg"
@@ -34,6 +40,7 @@ const TheCarribooJackDetail = ({ item }: TheCarribooJackDetailProps) => {
           caption="This quiet moment might be my favorite photo from all the years of the event—a true party in the woods. 📸 Alex Pashley"
         />
       </div>
+
       <div className="mt-16 max-w-5xl mx-auto px-6">
         <ImageWithLoader
           src="/content/the-carriboo-jack/carriboo-jack_02.jpg"
@@ -42,11 +49,12 @@ const TheCarribooJackDetail = ({ item }: TheCarribooJackDetailProps) => {
           caption="Nick, stoked on the ride and rocking a Smartwool x Cariboo Jack jersey, soaking in the trails and the energy of the event. 📸 Alex Pashley"
         />
       </div>
+
       {/* Project Overview */}
       <div className="max-w-2xl mx-auto px-6 my-24">
         <h3 className="text-3xl font-bold text-white mb-6">Overview</h3>
         <div className="text-gray-50 leading-relaxed font-normal text-md md:text-lg">
-          <p>There’s an arc here.</p>
+          <p>There's an arc here.</p>
           <p>
             In 2018, inspired by events like Trans-Cascadia, I felt a pull to
             create something from nothing: a mountain bike event rooted in trail
@@ -57,7 +65,7 @@ const TheCarribooJackDetail = ({ item }: TheCarribooJackDetailProps) => {
           </p>
           <p>
             Each year, the event grew. Sponsors came on board. Production became
-            more polished. It started to look like the “real” thing. The
+            more polished. It started to look like the "real" thing. The
             Carriboo Jack was always a bit awkward by design—a backcountry race
             that pushed people outside their comfort zones. The first year, I
             begged people to sign up. A few years later, it was selling out in
@@ -70,6 +78,7 @@ const TheCarribooJackDetail = ({ item }: TheCarribooJackDetailProps) => {
           </p>
         </div>
       </div>
+
       <div className="mt-16 max-w-5xl mx-auto px-6">
         <ImageWithLoader
           src="/content/the-carriboo-jack/carriboo-jack_03.jpg"
@@ -78,6 +87,7 @@ const TheCarribooJackDetail = ({ item }: TheCarribooJackDetailProps) => {
           caption="A rider high in the alpine. There's something magical about this zone—hard to explain, but deeply felt. 📸 Cort Muller"
         />
       </div>
+
       <div className="mt-16 max-w-5xl mx-auto px-6">
         <ImageWithLoader
           src="/content/the-carriboo-jack/carriboo-jack_04.jpg"
@@ -86,6 +96,7 @@ const TheCarribooJackDetail = ({ item }: TheCarribooJackDetailProps) => {
           caption="Pizza master Grottylocks slinging pies to a group of hungry riders—much-needed fuel after a long day in the mountains. 📸 Cort Muller"
         />
       </div>
+
       {/* My Role */}
       <div className="max-w-2xl mx-auto px-6 my-24">
         <h3 className="text-3xl font-bold text-white mb-6">My role</h3>
@@ -99,6 +110,7 @@ const TheCarribooJackDetail = ({ item }: TheCarribooJackDetailProps) => {
           </p>
         </div>
       </div>
+
       <div className="mt-16 max-w-5xl mx-auto px-6">
         <ImageWithLoader
           src="/content/the-carriboo-jack/carriboo-jack_05.jpg"
@@ -107,6 +119,7 @@ const TheCarribooJackDetail = ({ item }: TheCarribooJackDetailProps) => {
           caption="Big Jerm being serenaded by Cariboo Jack—a moment that perfectly captures the spirit of the event. Equal parts grit, humor, and community. 📸 Ben Gavelda"
         />
       </div>
+
       <div className="mt-16 max-w-5xl mx-auto px-6">
         <ImageWithLoader
           src="/content/the-carriboo-jack/carriboo-jack_06.jpg"
@@ -115,17 +128,19 @@ const TheCarribooJackDetail = ({ item }: TheCarribooJackDetailProps) => {
           caption="10 Barrel Brewing crafted a light Cariboo Jack beer—always welcome after a hard day in the mountains. 📸 Cort Muller"
         />
       </div>
+
       {/* Design Insight */}
       <div className="max-w-2xl mx-auto px-6 my-24">
         <h3 className="text-3xl font-bold text-white mb-6">Design insight</h3>
         <div className="text-gray-50 leading-relaxed font-normal text-md md:text-lg">
           <p>
-            The most important design decision wasn’t about branding, logistics,
+            The most important design decision wasn't about branding, logistics,
             or scale—it was about restraint. Letting the event be what it wanted
             to be, not what I thought it should become.
           </p>
         </div>
       </div>
+
       <div className="mt-16 max-w-5xl mx-auto px-6">
         <ImageWithLoader
           src="/content/the-carriboo-jack/carriboo-jack_07.jpg"
@@ -134,6 +149,7 @@ const TheCarribooJackDetail = ({ item }: TheCarribooJackDetailProps) => {
           caption="The USFS packed tools in by horse a few days before our dig days, making it possible to work deep in the backcountry without motorized access. 📸 Ben Gavelda"
         />
       </div>
+
       <div className="mt-16 max-w-5xl mx-auto px-6">
         <ImageWithLoader
           src="/content/the-carriboo-jack/carriboo-jack_08.jpg"
@@ -142,6 +158,7 @@ const TheCarribooJackDetail = ({ item }: TheCarribooJackDetailProps) => {
           caption="The trophy skull tradition began with Mitch Prissel in 2018 and quickly became part of the Cariboo Jack lore. 📸 Cort Muller"
         />
       </div>
+
       {/* Closing */}
       <div className="max-w-2xl mx-auto px-6 mt-24 mb-40">
         <h3 className="text-3xl font-bold text-white mb-6">Closing</h3>
@@ -152,38 +169,39 @@ const TheCarribooJackDetail = ({ item }: TheCarribooJackDetailProps) => {
             riding bikes in the woods with your friends.
           </p>
           <p>
-            Looking back, I’m amazed at how much time I spent deep in the
+            Looking back, I'm amazed at how much time I spent deep in the
             forest—alone and with others—clearing trail, problem-solving, and
             staying up late worrying about race details. It was 100%
             volunteer-run, with all proceeds going back into the trails. I
-            wouldn’t trade any of it for anything.
+            wouldn't trade any of it for anything.
           </p>
+          <div className="flex justify-center mt-8">
+            <a
+              href="https://www.mountainbiketetons.org/the-carriboo-jack"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-white hover:bg-gray-100 text-black font-semibold px-6 py-3 rounded-full shadow-lg transition-all duration-300 hover:scale-105 cursor-pointer"
+            >
+              <span>Visit website</span>
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                className="flex-shrink-0"
+              >
+                <path
+                  d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </a>
+          </div>
         </div>
-      </div>
-
-      {/* Back to Top Button */}
-      <div className="flex justify-center mt-20 pb-8">
-        <button
-          onClick={scrollToTop}
-          className="bg-white hover:bg-gray-100 text-black rounded-full p-4 shadow-lg transition-all duration-300 hover:scale-110 cursor-pointer"
-          aria-label="Back to top"
-        >
-          <svg
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M12 4L12 20M12 4L6 10M12 4L18 10"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-          </svg>
-        </button>
       </div>
     </div>
   );
