@@ -1,9 +1,8 @@
 "use client";
 
 import { PortfolioItem } from "../../../types/portfolio";
-import { ImageWithLoader } from "../../ImageWithLoader";
 
-interface PeruvianMoutainRidesProps {
+interface PeruvianMoutainRidesDetailProps {
   item: PortfolioItem;
 }
 
@@ -12,9 +11,9 @@ const PeruvianMoutainRidesDetail = ({
 }: PeruvianMoutainRidesDetailProps) => {
   return (
     <div className="bg-black py-20 relative">
-      {/* Banner Video */}
+      {/* Banner */}
       <div className="max-w-4xl mx-auto mb-20">
-        <ImageWithLoader
+        <img
           src="/content/peruvian-mountain-rides/thumbnail.jpg"
           alt="Peruvian Mountain Rides homepage"
           className="w-full rounded-2xl"
@@ -33,19 +32,20 @@ const PeruvianMoutainRidesDetail = ({
 
       {/* Featured Images */}
       <div className="mt-20 max-w-4xl mx-auto px-6">
-        <ImageWithLoader
+        <img
           src="/content/peruvian-mountain-rides/pmr_01.jpg"
           alt="Peruvian Mountain Rides hello screen"
           className="w-full rounded-2xl"
         />
       </div>
       <div className="mt-20 max-w-4xl mx-auto px-6">
-        <ImageWithLoader
+        <img
           src="/content/peruvian-mountain-rides/pmr_02.jpg"
-          alt="Peruvian Mountain Rides loding screen"
+          alt="Peruvian Mountain Rides loading screen"
           className="w-full rounded-2xl"
         />
       </div>
+
       {/* Closing */}
       <div className="max-w-2xl mt-20 mx-auto px-6 mb-40">
         <div className="text-gray-50 leading-relaxed font-normal text-md md:text-lg">

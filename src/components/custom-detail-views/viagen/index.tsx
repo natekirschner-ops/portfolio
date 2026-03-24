@@ -1,9 +1,7 @@
 "use client";
 
 import { PortfolioItem } from "../../../types/portfolio";
-import { ImageWithLoader } from "../../ImageWithLoader";
-
-interface ViagenProps {
+interface ViagenDetailProps {
   item: PortfolioItem;
 }
 
@@ -12,7 +10,7 @@ const ViagenDetail = ({ item }: ViagenDetailProps) => {
     <div className="bg-black py-20 relative">
       {/* Banner Video */}
       <div className="max-w-4xl mx-auto mb-20">
-        <ImageWithLoader
+        <img
           src="/content/viagen/thumbnail.jpg"
           alt="Fallen leaves on the ground"
           className="w-full rounded-2xl"
@@ -31,7 +29,7 @@ const ViagenDetail = ({ item }: ViagenDetailProps) => {
 
       {/* Featured Images */}
       <div className="mt-20 max-w-4xl mx-auto px-6">
-        <ImageWithLoader
+        <img
           src="/content/viagen/viagen_01.jpg"
           alt="Viagen task creation"
           className="w-full rounded-2xl"

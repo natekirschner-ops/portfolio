@@ -1,7 +1,6 @@
 "use client";
 
 import { PortfolioItem } from "../../../types/portfolio";
-import { ImageWithLoader } from "../../ImageWithLoader";
 
 interface ExposedDetailProps {
   item: PortfolioItem;
@@ -63,22 +62,34 @@ const ExposedDetail = ({ item }: ExposedDetailProps) => {
       </div>
 
       {/* Featured Images */}
-      <div className="mt-20 max-w-4xl mx-auto px-6">
-        <ImageWithLoader
+      <figure className="mt-20 max-w-4xl mx-auto px-6">
+        <img
           src="/content/exposed/gallery-2.jpg"
           alt="Nate riding a bike through the Tetons"
           className="w-full rounded-2xl"
-          caption="The autumn colors were in full effect, painting the landscape with vibrant hues of red, orange, and yellow. A dusting of snow covered the ground, creating even more contrast to the kaleidoscope of colors. 📸 Alex Pashley"
         />
-      </div>
-      <div className="mt-20 max-w-4xl mx-auto px-6">
-        <ImageWithLoader
+        <figcaption className="text-gray-300 text-sm mt-3 px-1">
+          The autumn colors were in full effect, painting the landscape with
+          vibrant hues of red, orange, and yellow. A dusting of snow covered the
+          ground, creating even more contrast to the kaleidoscope of colors. 📸
+          Alex Pashley
+        </figcaption>
+      </figure>
+
+      <figure className="mt-20 max-w-4xl mx-auto px-6">
+        <img
           src="/content/exposed/gallery-3.jpg"
           alt="Fallen leaves on the ground"
           className="w-full rounded-2xl"
-          caption="The changing of seasons always brings a sense of reflection and rebirth. Change is inevitable — everything is continuously in motion, and I sometimes need to remind myself to stop and appreciate that moment, because that moment it will never happen again. 📸 Alex Pashley"
         />
-      </div>
+        <figcaption className="text-gray-300 text-sm mt-3 px-1">
+          The changing of seasons always brings a sense of reflection and
+          rebirth. Change is inevitable — everything is continuously in motion,
+          and I sometimes need to remind myself to stop and appreciate that
+          moment, because that moment it will never happen again. 📸 Alex
+          Pashley
+        </figcaption>
+      </figure>
 
       <div className="max-w-2xl mx-auto px-6 mt-16">
         <div className="text-gray-50 leading-relaxed font-normal text-md md:text-lg">
@@ -104,22 +115,31 @@ const ExposedDetail = ({ item }: ExposedDetailProps) => {
         </div>
       </div>
 
-      <div className="mt-16 max-w-4xl mx-auto px-6">
-        <ImageWithLoader
+      <figure className="mt-16 max-w-4xl mx-auto px-6">
+        <img
           src="/content/exposed/gallery-1.jpg"
           alt="Nate topping out on a big hike-a-bike"
           className="w-full rounded-2xl"
-          caption="You can't call it a backcountry ride without a little hike-a-bike! Looking back, this photo represents such a special time and place, with an amazing human-being. This will be a day I always will remember. 📸 Alex Pashley"
         />
-      </div>
-      <div className="mt-16 max-w-4xl mx-auto px-6">
-        <ImageWithLoader
+        <figcaption className="text-gray-300 text-sm mt-3 px-1">
+          You can't call it a backcountry ride without a little hike-a-bike!
+          Looking back, this photo represents such a special time and place,
+          with an amazing human-being. This will be a day I always will
+          remember. 📸 Alex Pashley
+        </figcaption>
+      </figure>
+
+      <figure className="mt-16 max-w-4xl mx-auto px-6">
+        <img
           src="/content/exposed/gallery-4.jpg"
           alt="Nate looking out at the mountainscape"
           className="w-full rounded-2xl"
-          caption="The more time you spend out in the mountains, you begin to realize how small you really are. 📸 Alex Pashley"
         />
-      </div>
+        <figcaption className="text-gray-300 text-sm mt-3 px-1">
+          The more time you spend out in the mountains, you begin to realize how
+          small you really are. 📸 Alex Pashley
+        </figcaption>
+      </figure>
 
       <div className="max-w-2xl mx-auto px-6 mt-16 mb-24">
         <div className="text-gray-50 leading-relaxed font-normal text-md md:text-lg">

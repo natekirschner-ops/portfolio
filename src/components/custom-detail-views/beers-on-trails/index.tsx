@@ -1,7 +1,6 @@
 "use client";
 
 import { PortfolioItem } from "../../../types/portfolio";
-import { ImageWithLoader } from "../../ImageWithLoader";
 
 interface BeersOnTrailsDetailProps {
   item: PortfolioItem;
@@ -12,7 +11,7 @@ const BeersOnTrailsDetail = ({ item }: BeersOnTrailsDetailProps) => {
     <div className="bg-black py-20 relative">
       {/* Banner Video */}
       <div className="max-w-4xl mx-auto mb-20">
-        <ImageWithLoader
+        <img
           src="/content/beers-on-trails/thumbnail.jpg"
           alt="Fallen leaves on the ground"
           className="w-full rounded-2xl"
@@ -31,7 +30,7 @@ const BeersOnTrailsDetail = ({ item }: BeersOnTrailsDetailProps) => {
 
       {/* Featured Images */}
       <div className="mt-20 max-w-4xl mx-auto px-6">
-        <ImageWithLoader
+        <img
           src="/content/beers-on-trails/beers-on-trails_01.jpg"
           alt="Beers on Trail mobile preview"
           className="w-full rounded-2xl"

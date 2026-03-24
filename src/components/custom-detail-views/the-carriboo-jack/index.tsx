@@ -1,7 +1,6 @@
 "use client";
 
 import { PortfolioItem } from "../../../types/portfolio";
-import { ImageWithLoader } from "../../ImageWithLoader";
 
 interface TheCarribooJackDetailProps {
   item: PortfolioItem;
@@ -33,21 +32,32 @@ const TheCarribooJackDetail = ({ item }: TheCarribooJackDetailProps) => {
       </div>
 
       <div className="mt-16 max-w-5xl mx-auto px-6">
-        <ImageWithLoader
-          src="/content/the-carriboo-jack/carriboo-jack_01.jpg"
-          alt="Party in the woods"
-          className="w-full rounded-lg"
-          caption="This quiet moment might be my favorite photo from all the years of the event—a true party in the woods. 📸 Alex Pashley"
-        />
+        <figure>
+          <img
+            src="/content/the-carriboo-jack/carriboo-jack_01.jpg"
+            alt="Party in the woods"
+            className="w-full rounded-lg"
+          />
+          <figcaption className="text-gray-400 text-sm mt-3 px-1">
+            This quiet moment might be my favorite photo from all the years of
+            the event—a true party in the woods. 📸 Alex Pashley
+          </figcaption>
+        </figure>
       </div>
 
       <div className="mt-16 max-w-5xl mx-auto px-6">
-        <ImageWithLoader
-          src="/content/the-carriboo-jack/carriboo-jack_02.jpg"
-          alt="Nick is stoked"
-          className="w-full rounded-lg"
-          caption="Nick, stoked on the ride and rocking a Smartwool x Cariboo Jack jersey, soaking in the trails and the energy of the event. 📸 Alex Pashley"
-        />
+        <figure>
+          <img
+            src="/content/the-carriboo-jack/carriboo-jack_02.jpg"
+            alt="Nick is stoked"
+            className="w-full rounded-lg"
+          />
+          <figcaption className="text-gray-400 text-sm mt-3 px-1">
+            Nick, stoked on the ride and rocking a Smartwool x Cariboo Jack
+            jersey, soaking in the trails and the energy of the event. 📸 Alex
+            Pashley
+          </figcaption>
+        </figure>
       </div>
 
       {/* Project Overview */}
@@ -80,21 +90,32 @@ const TheCarribooJackDetail = ({ item }: TheCarribooJackDetailProps) => {
       </div>
 
       <div className="mt-16 max-w-5xl mx-auto px-6">
-        <ImageWithLoader
-          src="/content/the-carriboo-jack/carriboo-jack_03.jpg"
-          alt="Rider high in the alpine"
-          className="w-full rounded-lg"
-          caption="A rider high in the alpine. There's something magical about this zone—hard to explain, but deeply felt. 📸 Cort Muller"
-        />
+        <figure>
+          <img
+            src="/content/the-carriboo-jack/carriboo-jack_03.jpg"
+            alt="Rider high in the alpine"
+            className="w-full rounded-lg"
+          />
+          <figcaption className="text-gray-400 text-sm mt-3 px-1">
+            A rider high in the alpine. There's something magical about this
+            zone—hard to explain, but deeply felt. 📸 Cort Muller
+          </figcaption>
+        </figure>
       </div>
 
       <div className="mt-16 max-w-5xl mx-auto px-6">
-        <ImageWithLoader
-          src="/content/the-carriboo-jack/carriboo-jack_04.jpg"
-          alt="Evan slinging pies"
-          className="w-full rounded-lg"
-          caption="Pizza master Grottylocks slinging pies to a group of hungry riders—much-needed fuel after a long day in the mountains. 📸 Cort Muller"
-        />
+        <figure>
+          <img
+            src="/content/the-carriboo-jack/carriboo-jack_04.jpg"
+            alt="Evan slinging pies"
+            className="w-full rounded-lg"
+          />
+          <figcaption className="text-gray-400 text-sm mt-3 px-1">
+            Pizza master Grottylocks slinging pies to a group of hungry
+            riders—much-needed fuel after a long day in the mountains. 📸 Cort
+            Muller
+          </figcaption>
+        </figure>
       </div>
 
       {/* My Role */}
@@ -112,21 +133,32 @@ const TheCarribooJackDetail = ({ item }: TheCarribooJackDetailProps) => {
       </div>
 
       <div className="mt-16 max-w-5xl mx-auto px-6">
-        <ImageWithLoader
-          src="/content/the-carriboo-jack/carriboo-jack_05.jpg"
-          alt="Big Jerm and Bill embody the Carriboo Jack spirit"
-          className="w-full rounded-lg"
-          caption="Big Jerm being serenaded by Cariboo Jack—a moment that perfectly captures the spirit of the event. Equal parts grit, humor, and community. 📸 Ben Gavelda"
-        />
+        <figure>
+          <img
+            src="/content/the-carriboo-jack/carriboo-jack_05.jpg"
+            alt="Big Jerm and Bill embody the Carriboo Jack spirit"
+            className="w-full rounded-lg"
+          />
+          <figcaption className="text-gray-400 text-sm mt-3 px-1">
+            Big Jerm being serenaded by Cariboo Jack—a moment that perfectly
+            captures the spirit of the event. Equal parts grit, humor, and
+            community. 📸 Ben Gavelda
+          </figcaption>
+        </figure>
       </div>
 
       <div className="mt-16 max-w-5xl mx-auto px-6">
-        <ImageWithLoader
-          src="/content/the-carriboo-jack/carriboo-jack_06.jpg"
-          alt="Carriboo Jack beer"
-          className="w-full rounded-lg"
-          caption="10 Barrel Brewing crafted a light Cariboo Jack beer—always welcome after a hard day in the mountains. 📸 Cort Muller"
-        />
+        <figure>
+          <img
+            src="/content/the-carriboo-jack/carriboo-jack_06.jpg"
+            alt="Carriboo Jack beer"
+            className="w-full rounded-lg"
+          />
+          <figcaption className="text-gray-400 text-sm mt-3 px-1">
+            10 Barrel Brewing crafted a light Cariboo Jack beer—always welcome
+            after a hard day in the mountains. 📸 Cort Muller
+          </figcaption>
+        </figure>
       </div>
 
       {/* Design Insight */}
@@ -142,21 +174,32 @@ const TheCarribooJackDetail = ({ item }: TheCarribooJackDetailProps) => {
       </div>
 
       <div className="mt-16 max-w-5xl mx-auto px-6">
-        <ImageWithLoader
-          src="/content/the-carriboo-jack/carriboo-jack_07.jpg"
-          alt="Trailwork tool stash"
-          className="w-full rounded-lg"
-          caption="The USFS packed tools in by horse a few days before our dig days, making it possible to work deep in the backcountry without motorized access. 📸 Ben Gavelda"
-        />
+        <figure>
+          <img
+            src="/content/the-carriboo-jack/carriboo-jack_07.jpg"
+            alt="Trailwork tool stash"
+            className="w-full rounded-lg"
+          />
+          <figcaption className="text-gray-400 text-sm mt-3 px-1">
+            The USFS packed tools in by horse a few days before our dig days,
+            making it possible to work deep in the backcountry without motorized
+            access. 📸 Ben Gavelda
+          </figcaption>
+        </figure>
       </div>
 
       <div className="mt-16 max-w-5xl mx-auto px-6">
-        <ImageWithLoader
-          src="/content/the-carriboo-jack/carriboo-jack_08.jpg"
-          alt="Trophy skull"
-          className="w-full rounded-lg"
-          caption="The trophy skull tradition began with Mitch Prissel in 2018 and quickly became part of the Cariboo Jack lore. 📸 Cort Muller"
-        />
+        <figure>
+          <img
+            src="/content/the-carriboo-jack/carriboo-jack_08.jpg"
+            alt="Trophy skull"
+            className="w-full rounded-lg"
+          />
+          <figcaption className="text-gray-400 text-sm mt-3 px-1">
+            The trophy skull tradition began with Mitch Prissel in 2018 and
+            quickly became part of the Cariboo Jack lore. 📸 Cort Muller
+          </figcaption>
+        </figure>
       </div>
 
       {/* Closing */}
