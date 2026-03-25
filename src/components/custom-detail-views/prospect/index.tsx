@@ -1,7 +1,7 @@
 "use client";
 
 import { PortfolioItem } from "../../../types/portfolio";
-interface ProspectProps {
+interface ProspectDetailProps {
   item: PortfolioItem;
 }
 
