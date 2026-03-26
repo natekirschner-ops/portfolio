@@ -18,6 +18,7 @@ const detailPageSlugs = new Set([
   "teton-gravity-research",
   "prospect",
   "stillness",
+  "lom",
 ]);
 
 interface GridItemProps {

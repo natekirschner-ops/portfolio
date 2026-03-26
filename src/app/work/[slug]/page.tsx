@@ -15,6 +15,7 @@ import PrayForSnowDetail from "../../../components/custom-detail-views/pray-for-
 import TetonGravityResearchDetail from "../../../components/custom-detail-views/teton-gravity-research";
 import ProspectDetail from "@/components/custom-detail-views/prospect";
 import StillnessDetail from "@/components/custom-detail-views/stillness";
+import LomDetail from "@/components/custom-detail-views/lom";
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -68,6 +69,8 @@ export default async function WorkPage({ params }: PageProps) {
         return <ProspectDetail item={item} />;
       case "stillness":
         return <StillnessDetail item={item} />;
+      case "lom":
+        return <LomDetail item={item} />;
       default:
         return notFound();
     }

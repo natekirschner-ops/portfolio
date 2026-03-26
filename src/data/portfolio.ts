@@ -95,15 +95,14 @@ export const portfolioItems: PortfolioItem[] = [
     },
   },
   {
-    id: "teton-gravity-research",
-    title: "Ski Big Three",
-    description:
-      "Collaborting with Teton Gravity Reserach to create a campaign micro-site for Ski Big Three.",
-    shortDescription: "Ski Big Three Campaign",
-    thumbnailUrl: "/content/teton-gravity-research/thumbnail.jpg",
+    id: "lom",
+    title: "LŌM Vans",
+    description: "Fun, creative, quirky van builds",
+    shortDescription: "Logo Design",
+    thumbnailUrl: "/content/lom/thumbnail.jpg",
     metadata: {
-      projectType: "Website Design",
-      client: "Teton Gravity Research + Ski Big Three",
+      projectType: "Branding",
+      client: "LŌM Vans",
     },
   },
   {
