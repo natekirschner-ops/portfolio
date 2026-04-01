@@ -28,13 +28,7 @@ const ViagenDetail = ({ item }: ViagenDetailProps) => {
       </div>
 
       {/* Featured Images */}
-      <div className="mt-20 max-w-4xl mx-auto px-6">
-        <img
-          src="/content/viagen/viagen_01.jpg"
-          alt="Viagen task creation"
-          className="w-full rounded-2xl"
-        />
-      </div>
+
       <div className="mt-20 max-w-4xl mx-auto px-6">
         <img
           src="/content/viagen/viagen_02.jpg"
