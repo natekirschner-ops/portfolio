@@ -36,37 +36,6 @@ const ViagenDetail = ({ item }: ViagenDetailProps) => {
           className="w-full rounded-2xl"
         />
       </div>
-      {/* Closing */}
-      <div className="max-w-2xl mt-20 mx-auto px-6 mb-40">
-        <div className="text-gray-50 leading-relaxed font-normal text-md md:text-lg">
-          <div className="flex justify-center mt-8">
-            <a
-              href="https://app.viagen.dev/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-white hover:bg-gray-100 text-black font-semibold px-6 py-3 rounded-full shadow-lg transition-all duration-300 hover:scale-105 cursor-pointer"
-            >
-              <span>Visit website</span>
-              <svg
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                className="flex-shrink-0"
-              >
-                <path
-                  d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
-            </a>
-          </div>
-        </div>
-      </div>
     </div>
   );
 };
